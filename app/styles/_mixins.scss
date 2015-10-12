@@ -20,8 +20,70 @@
   transition: $what;
 }
 
+@mixin transform($what) {
+  -webkit-transform: $what;
+  -moz-transform: $what;
+  -ms-transform: $what;
+  -o-transform: $what;
+  transform: $what;
+}
+
 @mixin box-shadow ($what...) {
   -webkit-box-shadow: $what;
   -moz-box-shadow:    $what;
   box-shadow:         $what;
+}
+
+@mixin box-shadow-pref () {
+  -webkit-box-shadow: 0 4px 12px rgba(0,0,0,0.5), 0 -1px 2px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0 4px 12px rgba(0,0,0,0.5), 0 -1px 2px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5), 0 -1px 2px rgba(0,0,0,0.1);
+}
+
+@mixin dflex(){
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+@mixin inline-flex(){
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+@mixin flex($weight){
+  -webkit-box-flex: $weight;      /* OLD - iOS 6-, Safari 3.1-6 */
+  -moz-box-flex: $weight;         /* OLD - Firefox 19- */
+  -webkit-flex: $weight;          /* Chrome */
+  -ms-flex: $weight;              /* IE 10 */
+  flex: $weight;                  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+@mixin flex-direction($direction) {
+  -webkit-flex-direction: $direction;
+  -ms-flex-direction: $direction;
+  flex-direction: $direction;
+}
+
+@mixin justify-content($justify) {
+  -webkit-justify-content: $justify;
+  -moz-justify-content: $justify;
+  justify-content: $justify;
+}
+
+@mixin flex-wrap($wrap) {
+  -webkit-flex-wrap: $wrap;   /* Chrome 21.0 - Safari 6.1 */
+  flex-wrap: $wrap;
+}
+
+@mixin user-select($what: none)  {
+  -webkit-user-select: $what;
+  -moz-user-select: $what;
+  -ms-user-select: $what;
+  user-select: $what;
 }

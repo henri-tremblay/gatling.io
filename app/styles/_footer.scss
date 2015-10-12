@@ -2,7 +2,6 @@
 
 #footer {
   background-color: $dark-background;
-  border-top: 4px solid $logo-middle-grey;
   bottom: 0;
   box-shadow: 0px -10px 8px -8px $lightened-border-color;
   color: $footer-color;
@@ -37,5 +36,84 @@
     font-size: 0.9em;
     height: $row-height;
     line-height: $row-height - 1;
+  }
+
+  .legals-copyrights {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    div {
+      display: inline;
+      padding: 5px;
+      line-height: 1em;
+    }
+    .legals {
+      font-weight: bold;
+
+      cursor: pointer;
+      @include transition(all 200ms linear);
+      &:hover {
+        color: $background-orange;
+      }
+    }
+  }
+}
+
+.modal-legals {
+  position: fixed;
+  font-size: 14px;
+  top: 0;
+  @include transition(all 200ms ease-out);
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  @include dflex();
+  background: rgba(0,0,0,0.5);
+
+  .modal-legals-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    @include transition(top 200ms ease-out);
+    left: 0;
+    @include dflex();
+
+    .modal-legals-box {
+      position: relative;
+      margin: auto;
+      padding: 10px 20px 30px 20px;
+      background: white;
+      border-radius: 3px;
+      max-width: 600px;
+      @include box-shadow-pref();
+
+      .modal-close {
+        position: absolute;
+        right: 10px;
+        top: 0;
+        font-size: 30px;
+        &:hover {
+          color: #808080;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  &.ng-enter, &.ng-leave.ng-leave-active {
+    opacity: 0;
+
+    .modal-legals-container {
+      top: -50%;
+    }
+  }
+
+  &.ng-enter.ng-enter-active, &.ng-leave {
+    opacity: 1;
+
+    .modal-legals-container {
+      top: 0;
+    }
   }
 }

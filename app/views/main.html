@@ -25,50 +25,19 @@
       </div>
     </div>
     <div class="col-xs-5">
-      <img src="/images/img1.png" alt="Gatling">
+      <img src="/images/gatling-logo.png" alt="Gatling">
     </div>
   </div>
 </section>
 
 <!-- PROFESSIONAL SERVICES SECTION LINK -->
-<section id="improve">
+<section id="improve" ng-click="redirect('#/services')">
   <div class="content-wrapper">
-    <a href="#/services" translate="HOME_BANNER"></a>
+    <span translate="HOME_BANNER"></span>
   </div>
 </section>
 
-<!-- CAROUSEL SECTION -->
-<section id="steps">
-  <div class="container">
-    <!-- CAROUSEL LINKS -->
-    <div class="step">
-      <div class="step-highlight step-{{carouselStep}}"></div>
-      <div class="step-item clickable" ng-click="hardCarouselUpdate(0)" translate="HOME_CAROUSEL_RECORD"></div>
-      <div class="step-item clickable" ng-click="hardCarouselUpdate(1)" translate="HOME_CAROUSEL_EDIT"></div>
-      <div class="step-item clickable" ng-click="hardCarouselUpdate(2)" translate="HOME_CAROUSEL_LAUNCH"></div>
-      <div class="step-item clickable" ng-click="hardCarouselUpdate(3)" translate="HOME_CAROUSEL_ANALYZE"></div>
-    </div>
-
-    <!-- CAROUSEL -->
-    <div class="carousel-container">
-      <div class="carousel-content transitionable" id="main-carousel">
-
-        <!-- FIRST SLIDE : RECORD -->
-        <div class="carousel-slide text-center" id="carousel-recorder" ng-include="'views/slides/record.html'"></div>
-
-        <!-- SECOND SLIDE : EDIT -->
-        <div class="carousel-slide" id="carousel-edit" ng-include="'views/slides/edit.html'"></div>
-
-        <!-- THIRD SLIDE : LAUNCH -->
-        <div class="carousel-slide text-center" id="carousel-launch" ng-include="'views/slides/launch.html'"></div>
-
-        <!-- FORTH SLIDE : ANALYZE-->
-        <div class="carousel-slide text-center" id="carousel-analyse" ng-include="'views/slides/analyze.html'"></div>
-
-      </div>
-    </div>
-  </div>
-</section>
+<section ng-include="'views/steps.html'"></section>
 
 <section id="testimonials">
   <header class="row-fluid">
@@ -165,11 +134,11 @@
   <section class="first-row row-fluid">
     <div class="container">
       <!-- @formatter:off -->
-      <div class="col-xs-offset-2 col-xs-2"><a href="http://www.ticketfly.com"><img src="/images/logo-ticketfly.png"
+      <div class="col-xs-offset-2 col-xs-2"><a href="http://www.ticketfly.com" target="_blank"><img src="/images/logo-ticketfly.png"
                                                                                     alt="TICKET FLY"/></a></div>
-      <div class="col-xs-2"><a href="http://www.gilt.com"><img src="/images/logo-gilt.png" alt="GILT"/></a></div>
-      <div class="col-xs-2"><a href="http://www.abiquo.com"><img src="/images/logo-abiquo.png" alt="ABIQUO"/></a></div>
-      <div class="col-xs-2"><a href="http://www.secutix.com"><img src="/images/logo-secutix.png"
+      <div class="col-xs-2"><a href="http://www.gilt.com" target="_blank"><img src="/images/logo-gilt.png" alt="GILT"/></a></div>
+      <div class="col-xs-2"><a href="http://www.abiquo.com" target="_blank"><img src="/images/logo-abiquo.png" alt="ABIQUO"/></a></div>
+      <div class="col-xs-2"><a href="http://www.secutix.com" target="_blank"><img src="/images/logo-secutix.png"
                                                                   alt="SECUTIX"/></a></div>
       <!-- @formatter:on -->
     </div>
@@ -177,13 +146,13 @@
   <section class="row-fluid">
     <div class="container">
       <!-- @formatter:off -->
-      <div class="col-xs-offset-2 col-xs-2"><a href="http://www.ezakus.com"><img src="/images/logo-ezakus.png"
+      <div class="col-xs-offset-2 col-xs-2"><a href="http://www.ezakus.com" target="_blank"><img src="/images/logo-ezakus.png"
                                                                                  alt="EZAKUS"/></a></div>
-      <div class="col-xs-2"><a href="http://www.shutterfly.com"><img src="/images/logo-shutterfly.png"
+      <div class="col-xs-2"><a href="http://www.shutterfly.com" target="_blank"><img src="/images/logo-shutterfly.png"
                                                                      alt="SHUTTERFLY"/></a></div>
-      <div class="col-xs-2"><a href="http://www.bouyguestelecom.fr"><img src="/images/logo-bouygues.png"
+      <div class="col-xs-2"><a href="http://www.bouyguestelecom.fr" target="_blank"><img src="/images/logo-bouygues.png"
                                                                          alt="BOUYGUES TELECOM"/></a></div>
-      <div class="col-xs-2"><a href="http://www.open-xchange.com"><img src="/images/logo-open-xchange.png"
+      <div class="col-xs-2"><a href="http://www.open-xchange.com" target="_blank"><img src="/images/logo-open-xchange.png"
                                                                        alt="OPEN XCHANGE"/></a></div>
       <!-- @formatter:on -->
     </div>

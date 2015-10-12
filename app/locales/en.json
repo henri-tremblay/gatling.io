@@ -1,8 +1,27 @@
 {
-  "HOME": "HOME",
-  "DOWNLOAD": "DOWNLOAD",
-  "DOCUMENTATION": "DOCUMENTATION",
-  "PROFESSIONAL_SERVICES": "PROFESSIONAL SERVICES",
+  "MENU_RESOURCES" : "RESOURCES",
+  "MENU_RESOURCES_DOWNLOAD" : "Download",
+  "MENU_RESOURCES_DOCUMENTATION" : "Documentation",
+  "MENU_RESOURCES_TALKS" : "Talks",
+  "MENU_RESOURCES_ABOUT" : "About Gatling",
+  "MENU_PROFESSIONAL_SERVICES" : "PROFESSIONAL SERVICES",
+  "MENU_PROFESSIONAL_SERVICES_SUPPORT" : "Support & Consulting",
+  "MENU_PROFESSIONAL_SERVICES_TRAINING" : "Training",
+  "MENU_PROFESSIONAL_SERVICES_STORIES" : "Users stories",
+  "MENU_PROFESSIONAL_SERVICES_WHY" : "Why Gatling?",
+  "MENU_COMPANY" : "COMPANY",
+  "MENU_COMPANY_VALUES" : "Our values",
+  "MENU_COMPANY_HISTORY" : "History",
+  "MENU_COMPANY_TEAM" : "The team",
+  "MENU_COMPANY_CONTACT" : "Contact",
+  "MENU_BLOG" : "BLOG",
+  "MENU_SHARE" : "SHARE",
+  "MENU_SHARE_GITHUB" : "Github",
+  "MENU_SHARE_GOOGLEPLUS" : "Google+",
+  "MENU_SHARE_TWITTER" : "Twitter",
+  "MENU_SHARE_LINKEDIN" : "LinkedIn",
+  "MENU_SHARE_FACEBOOK" : "Facebook",
+  "MENU_SHARE_YOUTUBE" : "Youtube",
   "FOOTER": "Gatling is an open-source load testing framework based on <strong>Scala</strong>, <strong>Akka</strong> and <strong>Netty</strong>",
 
   "HOME_HEADER_TITLE": "is an open-source load testing framework based on <strong>Scala</strong>, <strong>Akka</strong> and <strong>Netty</strong>",
@@ -10,7 +29,7 @@
   "HOME_HEADER_SUBTITLE2": "Ready-to-present HTML reports",
   "HOME_HEADER_SUBTITLE3": "Scenario recorder and developer-friendly DSL",
   "HOME_HEADER_SUBTITLE4": "\"Arm yourself for performance\"",
-  "HOME_BANNER": "Boost&nbsp;your&nbsp;business with&nbsp;our&nbsp;professional&nbsp;services",
+  "HOME_BANNER": "New support offers! Let's team up!",
   "HOME_CAROUSEL_RECORD": "Record",
   "HOME_CAROUSEL_RECORD_CONTENT": "With your own browser, create as many scenarios as you need!<br/>With Gatling recorder, you will be able to simulate everything, even the user's think time!",
   "HOME_CAROUSEL_EDIT": "Edit",
@@ -114,5 +133,128 @@
   "OX_QUOTE_AUTHOR": "Head of Quality Assurance @ Open-Xchange",
 
   "STORY_TRAVEL": "TRAVEL",
-  "STORY_BC_DESCRIPTION": "<p>There has been a tendency to rely less on a centralised load-test team running on an internal infrastructure towards a model where developers and testers are spinning up instances and running load-tests themselves.</p><p>Gatling is a perfect fit for this and <strong>we are starting to help product teams run Gatling as part of their Continuous Delivery pipeline</strong> utilising the Gatling Jenkins plugin.</p>"
+  "STORY_BC_DESCRIPTION": "<p>There has been a tendency to rely less on a centralised load-test team running on an internal infrastructure towards a model where developers and testers are spinning up instances and running load-tests themselves.</p><p>Gatling is a perfect fit for this and <strong>we are starting to help product teams run Gatling as part of their Continuous Delivery pipeline</strong> utilising the Gatling Jenkins plugin.</p>",
+
+  "LICENCE_COMMUNITY_INFO": "<b>Gatling community</b> is distributed under Apache 2.0 license. Gatling is open source and always will be. There is a new release every year.",
+  "LICENCE_BASIC_INFO": "<b>Gatling Basic</b> is distributed under proprietary license. You have access to Gatling’s releases as soon as they are available. You can test as many times as you wish your own applications. You are not allowed under any circumstances to distribute Gatling Basic’s binaries.",
+  "LICENCE_PRO_INFO": "<b>Gatling Pro</b> is distributed under proprietary license. You have access to Gatling’s releases as soon as they are available. You can test as many times as you wish your own applications. You are not allowed under any circumstances to distribute Gatling Basic’s binaries.",
+
+  "LEGAL_TITLE" : "Legals",
+  "LEGAL_CONTENT" : "This website is owned and maintained by <b>Gatling Corp</b>.<br/>The Society is registered in the Créteil Trade and Companies Register under number 812 810 216.<br/>Registered office address: <b>45-47 avenue Carnot – 94230 Cachan FRANCE</b>.<br/>The company is capitalized at <b>50 000 €</b>.<br/>Phone number: <b>+33 1 41 24 43 29</b><br/>Any complaint regarding the website’s content must be sent to the registered office, to the attention of the publication director, Mr Stéphane Landelle.",
+
+  "DEFINITION_MINOR_RELEASE_TITLE" : "Minor release:",
+
+  "DEFINITION_MINOR_RELEASE" : "Minor release occurs once a year. It includes community contributions and Gatling’s critical correction patches.",
+
+  "DEFINITION_ENTERPRISE_FIXES_TITLE" : "Enterprises fixes:",
+
+  "DEFINITION_ENTERPRISE_FIXES" : "Enterprises fixes occur twice a year or more. They give you access to all Gatling’s correction patches.",
+
+  "DEFINITION_SNAPSHOTS_TITLE" : "Snapshots:",
+
+  "DEFINITION_SNAPSHOTS" : "Get instant access to Gatling’s every correction patches as soon as they are available and to some exclusive features.",
+
+  "DEFINITION_COMMUNITY_MAILING_LIST_TITLE" : "Community mailing list:",
+
+  "DEFINITION_COMMUNITY_MAILING_LIST" : "Subscribe to Gatling’s Google Group, help and get helped by Gatling’s community.",
+
+  "DEFINITION_PRO_MAILING_LIST_TITLE" : "Pro mailing list:",
+
+  "DEFINITION_PRO_MAILING_LIST" : "Get direct access to Gatling’s development team. We answer within hours on business days.",
+
+  "DEFINITION_EBIZ_TITLE" : "eBusiness Information ",
+
+  "DEFINITION_EBIZ" : "is an IT consulting firm founded in 2000. Its CTO created Gatling in 2011. It supports and funds Gatling since the very beginning.",
+
+  "VALUES" : "Our Values",
+
+  "VALUES_TITLE_1" : "Open source",
+  "VALUES_CONTENT_1" : "Gatling is open-source, and always will be. We believe that open source is at the core of innovation and technological innovation is Gatling's DNA. Check out our <a href=\"https://groups.google.com/forum/#!forum/gatling\" target=\"_blank\">Google Group</a> to enjoy community support.",
+
+  "VALUES_TITLE_2" : "Agility",
+  "VALUES_CONTENT_2" : "We built Gatling to allow better communication and teamwork within the agile development teams. It works with your build-tool. It provides you also with dynamic, easy-to-read and ready-to-present reports. Because performance testing is everyone's matter.",
+
+  "VALUES_TITLE_3" : "High performance",
+  "VALUES_CONTENT_3" : "Gatling compute and provides you with the right metrics to analyze your web app's performance. Because it is based on Akka, Netty and AsyncHTTPClient, Gatling is able to simulate a high load of vitual users.",
+
+  "WHY" : "Why Gatling ?",
+
+  "WHY_TITLE_1" : "Ready-to-present reports",
+  "WHY_CONTENT_1" : "Zoom in, Zoom out. Thanks to our dynamic reports, share information to your team. Easy-to-read, ready-to-present, Gatling’s reports are the best way to get everyone on board for load testing.",
+
+  "WHY_TITLE_2" : "High concurrency rate",
+  "WHY_CONTENT_2" : "Gatling is based on cutting-edge technologies and frameworks like Akka, Netty and AsyncHTTPClient. The actor model makes it possible to inject a very high load of virtual users.",
+
+  "WHY_TITLE_3" : "Easy maintainability",
+  "WHY_CONTENT_3" : "Gatling’s code-like scripting is a new approach of performance testing: developers play a much greater role. Scenarios are very easy to change and to maintain.",
+
+  "WHY_TITLE_4" : "Go with percentiles",
+  "WHY_CONTENT_4" : "Gatling provides you with high-precision percentiles. These metrics are the only one relevant for load & performance testing. Don’t waste your time anymore!",
+
+  "HISTORY" : "History",
+
+  "HISTORY_TITLE_1" : "Why Gatling?",
+  "HISTORY_CONTENT_1" : "Gatling is developed by former consultants since 2012. Its founder is Stéphane Landelle which was the CTO of eBusiness Information, an IT consulting firm in Paris area, founded in 2000. A full time team of consultants is since dedicated to Gatling’s development and improvement.",
+
+  "HISTORY_TITLE_2" : "Why Gatling Corp?",
+  "HISTORY_CONTENT_2" : "Gatling Corp is the official entity which develops Gatling. It aims at keeping Gatling open-source with cutting-edge technologies. Its parent company is eBusiness Information. All Gatling developers are certified in Java and Scala. They are also dedicated to professional services (Gatling’s professional support and consulting services).",
+
+  "TEAM" : "The team",
+
+  "TEAM_TITLE_1" : "Stéphane Landelle",
+  "TEAM_CONTENT_1" : "Gatling's founder and CEO<br/><a href=\"https://twitter.com/slandelle\" target=\"_blank\"><i class=\"fa fa-twitter\"></i>slandelle</a><br/><a href=\"https://github.com/slandelle\" target=\"_blank\"><i class=\"fa fa-github\"></i> slandelle</a>",
+
+  "TEAM_TITLE_2" : "Guillaume Corré",
+  "TEAM_CONTENT_2" : "Developer<br/><a href=\"https://twitter.com/notdryft\" target=\"_blank\"><i class=\"fa fa-twitter\"></i>notdryft</a><br/><a href=\"https://github.com/notdryft\" target=\"_blank\"><i class=\"fa fa-github\"></i> notdryft</a>",
+
+  "TEAM_TITLE_3" : "Flavien Bert",
+  "TEAM_CONTENT_3" : "Developer<br/><a href=\"https://twitter.com/FlavienBert\" target=\"_blank\"><i class=\"fa fa-twitter\"></i>FlavienBert</a>",
+
+  "TEAM_TITLE_4" : "Thomas Grenier",
+  "TEAM_CONTENT_4" : "Developer",
+
+  "TEAM_TITLE_5" : "Paul-Henri Pillet",
+  "TEAM_CONTENT_5" : "Business Development<br/><a href=\"https://twitter.com/ph_pillet\" target=\"_blank\"><i class=\"fa fa-twitter\"></i>ph_pillet</a>",
+
+  "TEAM_TITLE_6" : "eBusiness Information",
+  "TEAM_CONTENT_6" : "IT consulting firm<br/><a href=\"http://www.ebusinessinformation.fr/\" target=\"_blank\">http://www.ebusinessinformation.fr/</a>",
+
+  "CONTACT_TITLE" : "Contact",
+  "CONTACT_GATLING_CORP" : "Gatling Corp",
+  "CONTACT_ADDRESS" : "Address:",
+  "CONTACT_PHONE" : "Phone:",
+  "CONTACT_SCHEDULE" : "Monday - Friday<br/>10am - 6pm (France time zone)",
+  "CONTACT_EMAIL" : "E-mail:",
+  "CONTACT_FOLLOW_US" : "Follow us on:",
+
+  "TALKS" : "Talks",
+  "TALKS_UPCOMING" : "Upcoming",
+  "TALKS_NO_UPCOMING" : "No upcoming talks",
+  "TALKS_PASSED" : "Passed",
+  "TALK_1" : "June 11th, 2014 <a href=\"http://www.meetup.com/Geneva-Scala-Enthusiasts/events/180095262/\" target=\"_blank\">Geneva-Scala-Enthusiasts</a> with Nicolas Rémond",
+  "TALK_2" : "May 11th, 2014 <a href=\"http://javacro.org/sessions/#gatling\" target=\"_blank\"> JavaCro 2014</a> with Andrija Kranjec",
+  "TALK_3" : "May 8th, 2014 <a href=\"http://brug.be/gatherings/brug-may-2014\" target=\"_blank\"> BRUG</a> with Stéphan Mestach",
+  "TALK_4" : "March 19th, 2014 <a href=\"http://www.jug-montpellier.org/\" target=\"_blank\"> MontpellierJUG </a> with Stéphane Landelle",
+  "TALK_5" : "February 2nd, 2014 <a href=\"https://fosdem.org/2014/schedule/event/performance_testing_puppet_with_gatling\" target=\"_blank\"> Brussels FOSDEM </a> with Brian Cain",
+  "TALK_6" : "December 12th, 2013 <a href=\"http://blog.octo.com/perfug-gatling-par-stephane-landelle\" target=\"_blank\"> Paris PerfUG </a> with Stéphane Landelle",
+  "TALK_7" : "September 17th, 2013 <a href=\"http://www.lyonjug.org/\" target=\"_blank\"> LyonJUG </a> with Stéphane Landelle",
+  "TALK_8" : "July 9th, 2013 <a href=\"http://humantalks.com/cities/grenoble/events/7\" target=\"_blank\"> Human Talks Grenoble </a> with Laurent Bristiel",
+  "TALK_9" : "June 19th, 2013 <a href=\"http://www.jug.ch/html/events/2013/gatling_be.html\" target=\"_blank\"> SwissJUG </a> with Nicolas Rémond",
+  "TALK_10" : "June 14th, 2013 <a href=\"http://geekout.ee/conference/schedule\" target=\"_blank\"> GeekOut </a> with Stéphane Landelle",
+  "TALK_11" : "May 16th, 2013 <a href=\"http://marsjug.org/#reunions\" target=\"_blank\"> MarsJUG </a> with Stéphane Landelle & Pierre Dal-Pra",
+  "TALK_12" : "March 27th, 2013 <a href=\"http://www.devoxx.com/display/FR13/Lab+Day+1\" target=\"_blank\"> DevoxxFR Lab </a> with Stéphane Landelle & Pierre Dal-Pra",
+  "TALK_13" : "March 4th, 2013 <a href=\"http://www.alpesjug.fr/?p=1878\" target=\"_blank\"> Alpes JUG </a> with Stéphane Landelle and Pierre Dal-Pra",
+  "TALK_14" : "February 12th, 2013 <a href=\"http://chtijug.org/session-tests-de-charge-avec-gatling-le-12-fevrier\" target=\"_blank\"> Ch’ti JUG </a> with Stéphane Landelle & Pierre Dal-Pra",
+  "TALK_15" : "February 12th, 2013 <a href=\"http://humantalks.com/talks/78-tests-de-charge-avec-gatling\" target=\"_blank\"> Human Talks Paris </a> with Romain Sertelon",
+  "TALK_16" : "January 10th, 2013 <a href=\"http://www.bordeauxjug.org/20130110_Gatling\" target=\"_blank\"> Bordeaux JUG </a> with Stéphane Landelle & François Dussert",
+  "TALK_17" : "December 18th, 2012 <a href=\"http://www.normandyjug.org/2012/12/01/session-performance-avec-stephane-landelle-et-dimitri-baeli/\" target=\"_blank\"> Normandy JUG </a> with Stéphane Landelle",
+  "TALK_18" : "November 27th, 2012 <a href=\"http://www.eventbrite.fr/event/4830547297?ebtv=C\" target=\"_blank\"> Geneva JUG </a> with Nicolas Rémond",
+  "TALK_19" : "November 12th, 2012 <a href=\"http://www.devoxx.com/display/DV12/Blast+your+webapp+with+Gatling\" target=\"_blank\"> Devoxx </a> with Stéphane Landelle & Romain Sertelon",
+  "TALK_20" : "October 31th, 2012 <a href=\"http://www.yajug.org/confluence/pages/viewpage.action?pageId=1672387\" target=\"_blank\"> YaJUG </a> with Stéphane Landelle",
+  "TALK_21" : "October 17th, 2012 <a href=\"http://www.duchess-france.org/hands-on-gatling\" target=\"_blank\"> Duchess France </a> with Stéphane Landelle & Romain Sertelon",
+  "TALK_22" : "September 13th, 2012 <a href=\"http://jugevents.org/jugevents/event/46721\" target=\"_blank\"> JUG Lausanne </a> with Nicolas Rémond",
+  "TALK_23" : "April 26th, 2012 <a href=\"http://www.mix-it.fr/session/25/stresser-son-application-avec-gatling\" target=\"_blank\"> MixIT </a> with Stéphane Landelle & Romain Sertelon",
+  "TALK_24" : "April 19th, 2012 <a href=\"http://devoxx.com/display/FR12/Realiser+des+tests+de+charges+avec+Gatling\" target=\"_blank\"> DevoxxFR </a> with Stéphane Landelle & Romain Sertelon",
+  "TALK_25" : "February 22th, 2012 <a href=\"http://www.meetup.com/riviera-scala-clojure/events/45135892/?goback=%2Egde_1871734_member_96064244\" target=\"_blank\"> Riviera Scala Clojure </a> with Stéphane Landelle & Romain Sertelon",
+  "TALK_26" : "January 26th, 2012 Paris Scala User Group with Stéphane Landelle & Romain Sertelon"
 }

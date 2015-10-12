@@ -1,0 +1,92 @@
+<script>
+  var mapConf = {
+    "tileServer": "http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+    "poiServer": "",
+    "mapBounds": [
+      [
+        85,
+        -180
+      ],
+      [
+        -65,
+        180
+      ]
+    ],
+    "widgetConf": {
+      "panelPosition": "left"
+    },
+    "minZoom": 3,
+    "maxZoom": 18,
+    "initialZoom": 3,
+    "initialLocation": [
+      40.734538,
+      -73.9776211
+    ],
+    "fitBounds": [
+      [
+        48.905599980514666,
+        2.22747802734375
+      ],
+      [
+        48.7790182843748,
+        2.459564208984375
+      ]
+    ],
+    "clusterMaxLevel": 19
+  };
+  MapManager.callMap('gatling-map', mapConf, []);
+</script>
+
+<div id="contact">
+
+  <h2 translate="CONTACT_TITLE"></h2>
+
+  <div class="contact-container">
+    <div id="gatling-map"></div>
+    <div class="contact-content">
+      <h4 translate="CONTACT_ADDRESS"></h4>
+      <div class="contact-text">
+        <div translate="CONTACT_GATLING_CORP"></div>
+        <div>45-47, avenue Carnot</div>
+        <div>94230 Cachan (Paris area)</div>
+        <div>FRANCE</div>
+      </div>
+      <h4 translate="CONTACT_PHONE"></h4>
+      <div class="contact-text">
+        <div>+33 (0) 1 41 24 43 29</div>
+        <div class="schedule" translate="CONTACT_SCHEDULE"></div>
+      </div>
+      <h4 translate="CONTACT_EMAIL"></h4>
+      <div class="contact-text">
+        <div>contact@gatling.io</div>
+      </div>
+      <h4 translate="CONTACT_FOLLOW_US"></h4>
+        <div class="contact-follow">
+          <a href="https://github.com/gatling/gatling" target="_blank" >
+            <i class="fa fa-github"></i>
+            <span translate="MENU_SHARE_GITHUB"></span>
+          </a>
+          <a href="https://groups.google.com/forum/#!forum/gatling" target="_blank">
+            <i class="fa fa-google-plus"></i>
+            <span translate="MENU_SHARE_GOOGLEPLUS"></span>
+          </a>
+          <a href="https://twitter.com/GatlingTool" target="_blank">
+            <i class="fa fa-twitter"></i>
+            <span translate="MENU_SHARE_TWITTER"></span>
+          </a>
+          <a href="https://www.linkedin.com/company/gatling" target="_blank">
+            <i class="fa fa-linkedin"></i>
+            <span translate="MENU_SHARE_LINKEDIN"></span>
+          </a>
+          <a href="https://www.facebook.com/GatlingTool" target="_blank">
+            <i class="fa fa-facebook-official"></i>
+            <span translate="MENU_SHARE_FACEBOOK"></span>
+          </a>
+          <a href="https://www.youtube.com/channel/UCaNih6sKuJ9DIMjTEW1EAlQ" target="_blank">
+            <i class="fa fa-youtube"></i>
+            <span translate="MENU_SHARE_YOUTUBE"></span>
+          </a>
+        </div>
+    </div>
+  </div>
+</div>

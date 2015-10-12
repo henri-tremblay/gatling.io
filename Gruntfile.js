@@ -50,7 +50,7 @@ module.exports = function (grunt) {
       },
       compass: {
         files: ['<%= yeoman.app %>/styles/{,*/}*.{scss,sass}'],
-        tasks: ['compass:server', 'autoprefixer']
+        tasks: ['compass:server']
       },
       gruntfile: {
         files: ['Gruntfile.js']
@@ -72,8 +72,9 @@ module.exports = function (grunt) {
       options: {
         port: 9000,
         // Change this to '0.0.0.0' to access the server from outside.
-        hostname: 'localhost',
+        hostname: '0.0.0.0',
         livereload: 35729
+
       },
       livereload: {
         options: {
@@ -352,7 +353,9 @@ module.exports = function (grunt) {
             'views/{,*/}*.{html,json}',
             'images/{,*/}*.{webp}',
             'images/favicon.ico',
-            'fonts/{,*/}*'
+            'fonts/{,*/}*',
+            'conf/*.json',
+            'styles/*.css'
           ]
         }, {
           expand: true,

@@ -5,11 +5,24 @@ may not be reproduced or used in any manner whatsoever
 without the express written permission of eBusiness Information.
 -->
 
+<div ng-if="showLegals" class="modal-legals" ng-click="toggleLegals(true)" ng-class="{'opened' : showLegals}">
+  <div class="modal-legals-container">
+    <div class="modal-legals-box" ng-click="toggleLegals(false)">
+      <div class="modal-close">
+        &times;
+      </div>
+      <h3>Legals</h3>
+      <p translate="LEGAL_CONTENT"></p>
+    </div>
+  </div>
+</div>
+
 <footer id="footer">
-  <header class="row-fluid">
-    <div class="content-wrapper text-center" translate="FOOTER"></div>
-  </header>
   <section class="row-fluid">
-    <div class="content-wrapper text-center">&copy;2015 eBusiness Information 2000-2015</div>
+    <div class="legals-copyrights">
+      <div class="legals" ng-click="toggleLegals(true)" translate="LEGAL_TITLE"></div>
+      &nbsp;-&nbsp;
+      <div class="text-center">&copy;2015 Gatling Corp 2000-2015</div>
+    </div>
   </section>
 </footer>

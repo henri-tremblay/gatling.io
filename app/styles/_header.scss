@@ -6,6 +6,18 @@
   min-height: $header-height;
 }
 
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li a {
+  &.active-sub-menu {
+    color: $logo-orange !important;
+    border-top: none !important;
+    background-color: white !important;
+  }
+}
+
 #header {
   position: fixed;
   width: 100%;
@@ -13,6 +25,15 @@
   min-height: $header-height;
 
   @include box-shadow(0px 0px 5px black);
+
+  li {
+    @include transition(all .2s ease-in);
+    border-top: 4px solid transparent;
+    &:hover {
+      border-top: 4px solid white;
+      background-color: white;
+    }
+  }
 
   .navbar-nav.navbar-right:last-child {
     margin-right: 0;
@@ -90,6 +111,7 @@
     }
 
     .active {
+      border-top: 4px solid $logo-orange;
       background-color: white;
     }
 
@@ -103,7 +125,7 @@
           display: block;
           font-weight: bold;
           height: $header-height;
-          line-height: $header-height - 5;
+          line-height: $header-height - 9;
           padding: 0 12px;
           text-decoration: none;
           transition: all .2s ease-in;
@@ -113,7 +135,6 @@
 
         &:hover {
           background-color: white;
-          border-top: 4px solid $logo-orange;
           color: $logo-dark-grey;
         }
 
@@ -149,6 +170,10 @@
     }
   }
 
+  .not-focused {
+    background-color: transparent !important;
+  }
+
   .navbar-right {
     .dropdown-menu {
       left: 0;
@@ -165,7 +190,6 @@
     padding: 0;
 
     & > li > a {
-      background-color: $highlight-background-color;
       color: $logo-middle-grey;
       font-weight: bold;
       padding: 6px 12px;

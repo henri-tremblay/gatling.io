@@ -1,0 +1,17 @@
+<section id="talks" class="container">
+  <h1 translate="TALKS"></h1>
+  <div class="talks-container">
+    <div>
+      <h2 translate="TALKS_UPCOMING"></h2>
+      <span translate="TALKS_NO_UPCOMING"></span>
+    </div>
+    <div>
+      <h2 translate="TALKS_PASSED"></h2>
+      <div>
+        <ul>
+          <li ng-repeat="talk in talks"><span translate="{{talk}}"></span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

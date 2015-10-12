@@ -2,9 +2,9 @@
 
 /**
  * @ngdoc function
- * @name gatling.io.controller:MainCtrl
+ * @name gatling.io.controller:CodeCtrl
  * @description
- * # MainCtrl
+ * # CodeCtrl
  * Controller of the webcvApp
  */
 
@@ -15,7 +15,6 @@ var CodeCtrl = function($rootScope, $scope) {
   $scope.getNbLine = function(){
     return new Array(nbLine);
   };
-
 };
 
 angular.module('gatling.io').controller('CodeCtrl', ['$rootScope', '$scope', CodeCtrl]);

@@ -25,18 +25,62 @@ app.config(['$stateProvider', '$urlRouterProvider', '$translateProvider', functi
       templateUrl: 'views/main.html',
       controller: 'ConceptCtrl'
     })
+    .state('cheat-sheet', {
+      url: '/cheat-sheet/:version',
+      templateUrl: 'views/docs/cheat-sheet.html'
+    })
     .state('docs', {
       url: '/docs',
       templateUrl: 'views/docs.html'
+    })
+    .state('talks', {
+      url: '/docs/talks',
+      templateUrl: 'views/docs/talks.html',
+      controller: 'DocsCtrl'
+    })
+    .state('about', {
+      url: '/docs/about',
+      templateUrl: 'views/docs/about.html',
+      controller: 'DocsCtrl'
     })
     .state('download', {
       url: '/download',
       templateUrl: 'views/download.html'
     })
+    .state('values', {
+      url: '/values',
+      templateUrl: "views/presentation.html",
+      controller: 'PresentationCtrl'
+    })
+    .state('why', {
+      url: '/why',
+      templateUrl: "views/presentation.html",
+      controller: 'PresentationCtrl'
+    })
+    .state('history', {
+      url: '/history',
+      templateUrl: "views/presentation.html",
+      controller: 'PresentationCtrl'
+    })
+    .state('team', {
+      url: '/team',
+      templateUrl: "views/presentation.html",
+      controller: 'PresentationCtrl'
+    })
+    .state('contact', {
+      url: '/contact',
+      templateUrl: "views/contact.html"
+    })
     .state('services', {
       url: '/services',
-      templateUrl: 'views/services.html'
+      templateUrl: 'views/services.html',
+      controller: 'ServicesCtrl'
       })
+    .state('presentation', {
+      url: '/presentation',
+      templateUrl: "views/presentation.html",
+      controller: 'PresentationCtrl'
+    })
     .state('training', {
       url: '/services/training',
       templateUrl: 'views/training.html'
@@ -64,4 +108,13 @@ app.config(['$stateProvider', '$urlRouterProvider', '$translateProvider', functi
         suffix: '.json'
       })
       .preferredLanguage('en');
+}]);
+
+app.run(['$rootScope', '$http', function($rootScope, $http) {
+  hljs.configure({classPrefix: ''});
+  hljs.initHighlightingOnLoad();
+
+  $http.get('conf/conf.json').success(function(data) {
+    $rootScope.version = data.version;
+  });
 }]);

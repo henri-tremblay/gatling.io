@@ -8,59 +8,128 @@
     </header>
 
     <section class="row">
-      <div class="col-xs-offset-2 col-xs-8">
+      <div class="col-xs-offset-1 col-xs-10">
         <p><span translate="PRO_CONTACT"></span>
           <a class="btn btn-contact" href="mailto:contact@gatling.io">contact@gatling.io</a></p>
 
         <h2>Support</h2>
 
-        <table>
-          <thead>
-            <tr>
-              <th></th>
-              <th class="community" translate="PRO_SUPPORT_SILVER"></th>
-              <th class="silver_gold" translate="PRO_SUPPORT_GOLD"></th>
-              <th class="platinium" translate="PRO_SUPPORT_PLATINUM"></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td translate="PRO_SUPPORT_DURATION"></td>
-              <td class="community" translate="PRO_SUPPORT_SILVER_DURATION"></td>
-              <td class="silver_gold" translate="PRO_SUPPORT_GOLD_DURATION"></td>
-              <td class="platinium" translate="PRO_SUPPORT_PLATINUM_DURATION"></td>
-            </tr>
-            <tr>
-              <td translate="PRO_SUPPORT_NB_TICKETS"></td>
-              <td class="community" translate="PRO_SUPPORT_SILVER_NB_TICKETS"></td>
-              <td class="silver_gold" translate="PRO_SUPPORT_GOLD_NB_TICKETS"></td>
-              <td class="platinium" translate="PRO_SUPPORT_PLATINUM_NB_TICKETS"></td>
-            </tr>
-            <tr>
-              <td translate="PRO_SUPPORT_MAX_RESP_TIME"></td>
-              <td class="community" translate="PRO_SUPPORT_SILVER_MAX_RESP_TIME"></td>
-              <td class="silver_gold" translate="PRO_SUPPORT_GOLD_MAX_RESP_TIME"></td>
-              <td class="platinium" translate="PRO_SUPPORT_PLATINUM_MAX_RESP_TIME"></td>
-            </tr>
-            <tr>
-              <td translate="PRO_SUPPORT_PRIORITY"></td>
-              <td class="community" translate="PRO_SUPPORT_SILVER_PRIORITY"></td>
-              <td class="silver_gold" translate="PRO_SUPPORT_GOLD_PRIORITY"></td>
-              <td class="platinium" translate="PRO_SUPPORT_PLATINUM_PRIORITY"></td>
-            </tr>
-            <tr>
-              <td translate="PRO_SUPPORT_CONSULTING"></td>
-              <td class="community" translate="PRO_SUPPORT_SILVER_CONSULTING"></td>
-              <td class="silver_gold" translate="PRO_SUPPORT_GOLD_CONSULTING"></td>
-              <td class="platinium" translate="PRO_SUPPORT_PLATINUM_CONSULTING"></td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="pricing-container">
+
+          <div class="pricing">
+            <div class="pricing-block">
+              <div class="pricing-content">
+                <div class="pricing-title">Community</div>
+                <div class="pricing-price"> Free </div>
+                <div class="pricing-price-sub"></div>
+                <div class="pricing-desc">
+                  Minor Releases
+                  <br/><br/><br/>
+                  <hr/>
+                  1 release / year
+                  <hr/> Community Mailing List
+                  <hr/><br/>
+
+                  <hr/>
+                  <span class="pricing-licence-info">
+                    <span>Apache License</span>&nbsp;
+                    <i class="fa fa-info-circle"></i>
+                    <div class="pricing-popover" translate="LICENCE_COMMUNITY_INFO"></div>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <a href="#/download">
+              <div class="pricing-button">
+                <span>Free Download</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="pricing">
+            <div class="pricing-block">
+              <div class="pricing-content">
+                <div class="pricing-title">Basic</div>
+                <div class="pricing-price"> €499 </div>
+                <div class="pricing-price-sub"> yearly subscription</div>
+                <div class="pricing-desc">
+                  Free Releases
+                  <br/>Fix Releases
+                  <br/><br/><hr/>
+                  1 release / month
+                  <hr/> Community Mailing List
+                  <hr/><br/>
+
+                  <hr/>
+                  <span class="pricing-licence-info">
+                    <span>Gatling License</span>&nbsp;
+                    <i class="fa fa-info-circle"></i>
+                    <div class="pricing-popover" translate="LICENCE_BASIC_INFO"></div>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <a href="mailto:contact@gatling.io">
+              <div class="pricing-button green">
+                <span>Contact us</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="pricing" style="">
+            <div class="pricing-block">
+              <div class="pricing-content">
+                <div class="pricing-title">Professional</div>
+                <div class="pricing-price"> €1599 </div>
+                <div class="pricing-price-sub"> yearly subscription</div>
+                <div class="pricing-desc">
+                  Free Releases <br/>
+                  Fix Releases <br/>
+                  Future versions preview <br/><hr/>
+                  1 release / month
+                  <hr/>
+                  Pro Support
+                  <hr/> 10% off on professional services
+                  <hr/>
+                  <span class="pricing-licence-info">
+                    <span>Gatling License</span>&nbsp;
+                    <i class="fa fa-info-circle"></i>
+                    <div class="pricing-popover" translate="LICENCE_PRO_INFO"></div>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <a href="mailto:contact@gatling.io">
+              <div class="pricing-button green">
+                <span>Contact us</span>
+              </div>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!--DEFINITION-->
+    <section id="definitions"
+             ng-click="toggleDefinitions()"
+             ng-class="{'opened' : defOpened}">
+      <div class="open-button">
+        <span>For more information, click here</span>
+        <i class="fa fa-chevron-down"></i>
+      </div>
+      <div class="content" ng-repeat="definition in definitions"
+           ng-class="{'opened' : defOpened}">
+        <span class="title" translate="{{definition.name}}"></span>
+        <span translate="{{definition.def}}"></span>
+        <br ng-if="!$last"/>
+        <br ng-if="!$last"/>
       </div>
     </section>
 
     <section class="row">
-      <div class="col-xs-offset-2 col-xs-12">
+      <div class="col-xs-offset-1 col-xs-10">
         <h2 translate="PRO_PERFORMANCE_PACKAGE"></h2>
 
         <p translate="PRO_PERFORMANCE_PACKAGE_CONTENT1"></p>
@@ -72,7 +141,7 @@
     </section>
 
     <section class="row">
-      <div class="col-xs-offset-2 col-xs-12">
+      <div class="col-xs-offset-1 col-xs-10">
         <h2 translate="PRO_ON_QUOTE"></h2>
 
         <h3 translate="PRO_TRAINING"></h3>

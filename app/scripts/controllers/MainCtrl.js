@@ -8,7 +8,7 @@
  * Controller of the webcvApp
  */
 
-var MainCtrl = function ($rootScope, $scope, $location, $translate) {
+var MainCtrl = function ($rootScope, $scope, $location, $translate, $window) {
 
   //-----------------------------------------------//
   //                   Watchers                    //
@@ -25,7 +25,24 @@ var MainCtrl = function ($rootScope, $scope, $location, $translate) {
 
   $scope.getLanguage = function () {
     return $translate.use();
-  }
+  };
+
+  //------------------------------------------------------//
+  //                   Scope functions                    //
+  //------------------------------------------------------//
+
+  $scope.showLegals = false;
+  $scope.toggleLegals = function(bool) {
+    if (bool) {
+      $scope.showLegals = !$scope.showLegals;
+    }
+  };
+
+  $scope.redirect = function(url) {
+    if (url) {
+      $window.location.href = url;
+    }
+  };
 };
 
-angular.module('gatling.io').controller('MainCtrl', ['$rootScope', '$scope', '$location', '$translate', MainCtrl]);
+angular.module('gatling.io').controller('MainCtrl', ['$rootScope', '$scope', '$location', '$translate', '$window', MainCtrl]);
