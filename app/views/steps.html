@@ -2,7 +2,7 @@
 
   <!--RECORD-->
   <div class="step right-side appear appear-right appear-opacity"
-       scroll-detection="100">
+       scroll-detection="1">
     <div class="step-content wrap-reverse">
       <div class="img">
         <img src="/images/recorder.png" alt=""/>
@@ -16,7 +16,7 @@
 
   <!--EDIT-->
   <div class="step left-side appear appear-left appear-opacity"
-       scroll-detection="100">
+       scroll-detection="1">
     <div class="step-content">
       <div class="text">
         <h2 translate="HOME_CAROUSEL_EDIT"></h2>
@@ -24,7 +24,7 @@
       </div>
       <div class="img">
         <!-- @formatter:off -->
-        <pre><code class="scala" id="scala-code">class MySimulation extends Simulation {
+        <pre class="highlight-container"><code class="scala" id="scala-code">class MySimulation extends Simulation {
 
   val conf = http.baseUrl("http://localhost")
 
@@ -46,18 +46,27 @@
     </div>
   </div>
 
+  <script type="text/javascript">
+    $('pre code').each(function (i, block) {
+      hljs.highlightBlock(block);
+    });
+  </script>
+
   <!--LAUNCH-->
   <div class="step right-side appear appear-right appear-opacity"
-       scroll-detection="100">
+       scroll-detection="1">
     <div class="step-content wrap-reverse">
       <div class="img">
         <img src="/images/jenkins.png" alt=""/>
+
         <div translate="HOME_CAROUSEL_LAUNCH_CONTINUOUS_INTEGRATION"></div>
       </div>
       <div class="text">
         <h2 translate="HOME_CAROUSEL_LAUNCH"></h2>
+
         <div>
           <h4 translate="HOME_CAROUSEL_LAUNCH_OS"></h4>
+
           <div class="command-group">
             <div class="command">
               <span>Linux :</span>
@@ -69,6 +78,7 @@
             </div>
           </div>
           <h4 translate="HOME_CAROUSEL_LAUNCH_BUILD_TOOL"></h4>
+
           <div class="command-group">
             <div class="command">
               <span>Maven :</span>
@@ -86,7 +96,7 @@
 
   <!--ANALYZE-->
   <div class="step left-side appear appear-left appear-opacity"
-       scroll-detection="100">
+       scroll-detection="1">
     <div class="step-content">
       <div class="text">
         <h2 translate="HOME_CAROUSEL_ANALYZE"></h2>
@@ -97,6 +107,4 @@
       </div>
     </div>
   </div>
-
-
 </div>

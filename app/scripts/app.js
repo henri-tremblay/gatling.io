@@ -11,10 +11,10 @@
  */
 
 var app = angular.module('gatling.io', [
-    'ngAnimate', 'ngCookies', 'ngResource',
-    'ngSanitize', 'ngTouch', 'ui.router',
-    'angulartics', 'angulartics.google.analytics',
-    'pascalprecht.translate'
+  'ngAnimate', 'ngCookies', 'ngResource',
+  'ngSanitize', 'ngTouch', 'ui.router',
+  'angulartics', 'angulartics.google.analytics',
+  'pascalprecht.translate'
 ]);
 
 app.config(['$stateProvider', '$urlRouterProvider', '$translateProvider', function ($stateProvider, $urlRouterProvider, $translateProvider) {
@@ -22,8 +22,7 @@ app.config(['$stateProvider', '$urlRouterProvider', '$translateProvider', functi
   $stateProvider
     .state('index', {
       url: '/',
-      templateUrl: 'views/main.html',
-      controller: 'ConceptCtrl'
+      templateUrl: 'views/main.html'
     })
     .state('cheat-sheet', {
       url: '/cheat-sheet/:version',
@@ -75,7 +74,7 @@ app.config(['$stateProvider', '$urlRouterProvider', '$translateProvider', functi
       url: '/services',
       templateUrl: 'views/services.html',
       controller: 'ServicesCtrl'
-      })
+    })
     .state('presentation', {
       url: '/presentation',
       templateUrl: "views/presentation.html",
@@ -95,7 +94,7 @@ app.config(['$stateProvider', '$urlRouterProvider', '$translateProvider', functi
       controller: 'StoryCtrl'
     })
     .state('story.detail', {
-      templateUrl: function ($stateParams){
+      templateUrl: function ($stateParams) {
         return '/views/stories/' + $stateParams.story + '.html';
       }
     });
@@ -103,18 +102,37 @@ app.config(['$stateProvider', '$urlRouterProvider', '$translateProvider', functi
   $urlRouterProvider.otherwise('/');
 
   $translateProvider
-      .useStaticFilesLoader({
-        prefix: '../locales/',
-        suffix: '.json'
-      })
-      .preferredLanguage('en');
+    .useStaticFilesLoader({
+      prefix: '../locales/',
+      suffix: '.json'
+    })
+    .preferredLanguage('en');
 }]);
 
-app.run(['$rootScope', '$http', function($rootScope, $http) {
-  hljs.configure({classPrefix: ''});
-  hljs.initHighlightingOnLoad();
+app.run(['$rootScope', '$http', '$timeout', function ($rootScope, $http, $timeout) {
 
-  $http.get('conf/conf.json').success(function(data) {
+  $timeout(function () {
+  }, 100);
+
+  $http.get('conf/conf.json').success(function (data) {
     $rootScope.version = data.version;
   });
+}]);
+
+// Calling twitter
+app.run(['$timeout', function ($timeout) {
+  $timeout(function () {
+    !function (d, s, id) {
+      var js;
+      var fjs = d.getElementsByTagName(s)[0];
+      var p = /^http:/.test(d.location) ? 'http' : 'https';
+
+      if (!d.getElementById(id)) {
+        js = d.createElement(s);
+        js.id = id;
+        js.src = p + '://platform.twitter.com/widgets.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }
+    }(document, 'script', 'twitter-wjs');
+  }, 100);
 }]);

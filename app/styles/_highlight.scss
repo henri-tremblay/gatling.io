@@ -1,5 +1,7 @@
 @import 'variables';
 
+
+
 .highlight-container,
 .highlight {
   overflow: auto;
@@ -23,18 +25,22 @@
     display: block;
   }
 
+  .hljs-keyword,
   .keyword {
     color: $logo-middle-green;
   }
 
+  .hljs-number,
   .number {
     color: $logo-light-green;
   }
 
+  .hljs-string,
   .string {
     color: $logo-orange;
   }
 
+  .hljs-keyword,
   .keyword,
   .title {
     font-weight: bold;

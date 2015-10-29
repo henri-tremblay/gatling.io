@@ -186,7 +186,7 @@ var MapManager =  {
       }
     });
 
-    initWidgets = function() {
+    var initWidgets = function() {
 
       mapManager.conf.tracks.forEach(function(t) {
         var track;
