@@ -31,15 +31,15 @@
   "HOME_HEADER_SUBTITLE4": "\"Arm yourself for performance\"",
   "HOME_BANNER": "New support offers! Let's team up!",
   "HOME_CAROUSEL_RECORD": "Record",
-  "HOME_CAROUSEL_RECORD_CONTENT": "With your own browser, create as many scenarios as you need!<br/>With Gatling recorder, you will be able to simulate everything, even the user's think time!",
+  "HOME_CAROUSEL_RECORD_CONTENT": "- Compatible with all browsers<br>- Easy way to script your scenarios",
   "HOME_CAROUSEL_EDIT": "Edit",
-  "HOME_CAROUSEL_EDIT_CONTENT": "We have designed a clear and concise DSL to help you customize your scenarios.<br/>Easy-to-read, easy-to-script, developer-friendly!",
+  "HOME_CAROUSEL_EDIT_CONTENT": "- Write your scenarios with our scripting API or directly in Scala<br>- Easy-to-read and developer-friendly<br>- Easier maintainability",
   "HOME_CAROUSEL_LAUNCH": "Launch",
   "HOME_CAROUSEL_LAUNCH_OS": "Terminal",
   "HOME_CAROUSEL_LAUNCH_BUILD_TOOL": "Build tool",
   "HOME_CAROUSEL_LAUNCH_CONTINUOUS_INTEGRATION": "Continuous Integration",
   "HOME_CAROUSEL_ANALYZE": "Analyze",
-  "HOME_CAROUSEL_ANALYZE_CONTENT": "Gatling designs clear, exhaustive, dynamic and colorful reports!<br/>Zoom in, zoom out, point out performance issues!",
+  "HOME_CAROUSEL_ANALYZE_CONTENT": "- Clear, exhaustive, dynamic and colorful reports<br>- Significant metrics: 99th percentiles<br>- Ready-to-present",
   "HOME_USE_GATLING": "They use Gatling",
   "HOME_NEWS_HAPPY_NEW_YEAR": "Gatling's team wishes you a happy new year!",
   "HOME_NEWS_VERSION": "Gatling {{version}} is out!",
@@ -169,27 +169,27 @@
   "VALUES" : "Our Values",
 
   "VALUES_TITLE_1" : "Open source",
-  "VALUES_CONTENT_1" : "Gatling is open-source, and always will be. We believe that open source is at the core of innovation and technological innovation is Gatling's DNA. Check out our <a href=\"https://groups.google.com/forum/#!forum/gatling\" target=\"_blank\">Google Group</a> to enjoy community support.",
+  "VALUES_CONTENT_1" : "Gatling is open-source, and always will be. We believe that open source is at the core of innovation and technological innovation. Check out our <a href=\"https://groups.google.com/forum/#!forum/gatling\" target=\"_blank\">Google Group</a> to enjoy community support.",
 
   "VALUES_TITLE_2" : "Agility",
-  "VALUES_CONTENT_2" : "We built Gatling to allow better communication and teamwork within the agile development teams. It works with your build-tool. It provides you also with dynamic, easy-to-read and ready-to-present reports. Because performance testing is everyone's matter.",
+  "VALUES_CONTENT_2" : "We built Gatling to enhance communication and teamwork within the agile development teams. Because performance testing is everyone's matter.",
 
-  "VALUES_TITLE_3" : "High performance",
-  "VALUES_CONTENT_3" : "Gatling compute and provides you with the right metrics to analyze your web app's performance. Because it is based on Akka, Netty and AsyncHTTPClient, Gatling is able to simulate a high load of vitual users.",
+  "VALUES_TITLE_3" : "Scalability",
+  "VALUES_CONTENT_3" : "We believe applications are changing the way we do business and the way we live. Gatling helps you create scalable web applications.",
 
   "WHY" : "Why Gatling ?",
 
-  "WHY_TITLE_1" : "Ready-to-present reports",
-  "WHY_CONTENT_1" : "Zoom in, Zoom out. Thanks to our dynamic reports, share information to your team. Easy-to-read, ready-to-present, Gatling’s reports are the best way to get everyone on board for load testing.",
+  "WHY_TITLE_1" : "Dynamic reports",
+  "WHY_CONTENT_1" : "Our reports are clear, concise, dynamic and exhaustive. Share it with your team and get everyone on board. Because load testing is everyone’s matter.",
 
   "WHY_TITLE_2" : "High concurrency rate",
-  "WHY_CONTENT_2" : "Gatling is based on cutting-edge technologies and frameworks like Akka, Netty and AsyncHTTPClient. The actor model makes it possible to inject a very high load of virtual users.",
+  "WHY_CONTENT_2" : "Gatling is based on cutting-edge technologies and frameworks like Scala, Akka and Netty. High performance and efficiency are Gatling’s DNA.",
 
-  "WHY_TITLE_3" : "Easy maintainability",
-  "WHY_CONTENT_3" : "Gatling’s code-like scripting is a new approach of performance testing: developers play a much greater role. Scenarios are very easy to change and to maintain.",
+  "WHY_TITLE_3" : "Continuous integration and performance testing",
+  "WHY_CONTENT_3" : "Gatling’s code-like scripting is a new approach of performance testing. Experience continuous integration with the Maven, SBT and Jenkins’ plugins.",
 
-  "WHY_TITLE_4" : "Go with percentiles",
-  "WHY_CONTENT_4" : "Gatling provides you with high-precision percentiles. These metrics are the only one relevant for load & performance testing. Don’t waste your time anymore!",
+  "WHY_TITLE_4" : "High-precision metrics",
+  "WHY_CONTENT_4" : "Gatling provides you with high-precision metrics. Investigate your 1% lowest users and boost your return on investment.",
 
   "HISTORY" : "History",
 

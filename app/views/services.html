@@ -23,13 +23,9 @@
                 <div class="pricing-price"> Free </div>
                 <div class="pricing-price-sub"></div>
                 <div class="pricing-desc">
-                  Minor Releases
-                  <br/><br/><br/>
-                  <hr/>
-                  1 release / year
+                  1 release per year
+                  <br/>
                   <hr/> Community Mailing List
-                  <hr/><br/>
-
                   <hr/>
                   <span class="pricing-licence-info">
                     <span>Apache License</span>&nbsp;
@@ -53,13 +49,8 @@
                 <div class="pricing-price"> €499 </div>
                 <div class="pricing-price-sub"> yearly subscription</div>
                 <div class="pricing-desc">
-                  Free Releases
-                  <br/>Fix Releases
-                  <br/><br/><hr/>
-                  1 release / month
+                  Enterprise fixes <br/>
                   <hr/> Community Mailing List
-                  <hr/><br/>
-
                   <hr/>
                   <span class="pricing-licence-info">
                     <span>Gatling License</span>&nbsp;
@@ -83,13 +74,8 @@
                 <div class="pricing-price"> €1599 </div>
                 <div class="pricing-price-sub"> yearly subscription</div>
                 <div class="pricing-desc">
-                  Free Releases <br/>
-                  Fix Releases <br/>
-                  Future versions preview <br/><hr/>
-                  1 release / month
-                  <hr/>
+                  Enterprise fixes <br/><hr/>
                   Pro Support
-                  <hr/> 10% off on professional services
                   <hr/>
                   <span class="pricing-licence-info">
                     <span>Gatling License</span>&nbsp;
@@ -108,23 +94,6 @@
 
         </div>
 
-      </div>
-    </section>
-
-    <!--DEFINITION-->
-    <section id="definitions"
-             ng-click="toggleDefinitions()"
-             ng-class="{'opened' : defOpened}">
-      <div class="open-button">
-        <span>For more information, click here</span>
-        <i class="fa fa-chevron-down"></i>
-      </div>
-      <div class="content" ng-repeat="definition in definitions"
-           ng-class="{'opened' : defOpened}">
-        <span class="title" translate="{{definition.name}}"></span>
-        <span translate="{{definition.def}}"></span>
-        <br ng-if="!$last"/>
-        <br ng-if="!$last"/>
       </div>
     </section>
 

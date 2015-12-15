@@ -72,8 +72,7 @@ app.config(['$stateProvider', '$urlRouterProvider', '$translateProvider', functi
     })
     .state('services', {
       url: '/services',
-      templateUrl: 'views/services.html',
-      controller: 'ServicesCtrl'
+      templateUrl: 'views/services.html'
     })
     .state('presentation', {
       url: '/presentation',
