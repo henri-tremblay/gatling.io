@@ -14,7 +14,7 @@ var DocsCtrl = function ($scope) {
   //                   Scope variables                    //
   //------------------------------------------------------//
 
-  var MAX = 50; // FIXME Move in a constant factory
+  var MAX = 55; // FIXME Move in a constant factory
 
   var talks = [];
   for (var i = MAX; i > 0; i--) {
