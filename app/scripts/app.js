@@ -83,6 +83,10 @@ app.config(['$stateProvider', '$urlRouterProvider', '$translateProvider', functi
       url: '/services/training',
       templateUrl: 'views/training.html'
     })
+    .state('frontline', {
+      url: '/services/frontline',
+      templateUrl: 'views/frontline.html'
+    })
     .state('stories', {
       url: '/stories',
       templateUrl: 'views/stories.html'
