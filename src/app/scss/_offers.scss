@@ -1,0 +1,277 @@
+@import 'variables';
+@import 'mixins';
+
+footer.offers {
+  background-color: #efefef;
+  font-size: 1.2em;
+  padding-bottom: 60px;
+  padding-top: 1em;
+
+  .btn-contact {
+    background-color: $logo-orange;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 1.2em;
+    vertical-align: baseline;
+
+    &:hover {
+      background-color: $background-orange-light;
+    }
+  }
+}
+
+#offers {
+
+  h2 {
+    margin-bottom: 30px;
+  }
+
+  .btn-contact {
+    background-color: $logo-middle-green;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 16px;
+    vertical-align: baseline;
+
+    &:hover {
+      background-color: $logo-light-green;
+    }
+  }
+
+  .btn-consulting-form {
+    background-color: $logo-orange;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 16px;
+    vertical-align: baseline;
+
+    &:hover {
+      background-color: $background-orange-light;
+    }
+  }
+
+  table {
+    table-layout: fixed;
+  }
+
+  .fixed-width {
+    width: 20%;
+  }
+
+  thead,
+  tbody {
+
+    tr {
+
+      th,
+      td {
+        padding: 4px 8px;
+      }
+
+      th,
+      td {
+
+        &.sub-title {
+          padding-left: 24px;
+        }
+
+        &.community {
+          border-left: 2px solid $logo-orange;
+          font-weight: normal;
+          text-align: center;
+        }
+
+        &.silver_gold {
+          background-color: #f9f9f9;
+          border-left: 1px solid $logo-orange;
+          color: $logo-orange;
+          text-align: center;
+        }
+
+        &.platinium {
+          background-color: $logo-orange;
+          color: white;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  tbody {
+    border-top: 2px solid $logo-orange;
+  }
+
+  table,
+  table + p {
+    margin-top: 40px;
+  }
+}
+
+.pricing-container {
+  display: flex;
+  height: 370px;
+  width: 100%;
+}
+
+.pricing {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+
+  .pricing-block {
+    background: white;
+    border-radius: 2px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3), 0 -1px 2px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex: 1;
+    margin: 10px;
+    padding: 15px;
+    transition: all 200ms ease-out;
+
+    .pricing-content {
+      flex: 1;
+      text-align: center;
+    }
+
+    .pricing-title {
+      color: #cd6b00;
+      font-size: 18px;
+    }
+
+    .pricing-price {
+      font-size: 30px;
+      font-weight: bold;
+      margin: 5px 0 0 0;
+    }
+
+    .pricing-price-sub {
+      color: #808080;
+      font-size: 14px;
+      font-style: italic;
+      margin: 0 0 5px 0;
+      min-height: 25px;
+    }
+
+    .pricing-licence-info {
+      align-items: center;
+      cursor: pointer;
+      display: inline-flex;
+      justify-content: center;
+      position: relative;
+
+      .pricing-popover {
+        background-color: rgba(0, 0, 0, 0.8);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5), 0 -1px 2px rgba(0, 0, 0, 0.1);
+        bottom: 50px;
+        border-radius: 4px;
+        color: white;
+        font-size: 0.7em;
+        left: 0;
+        opacity: 0;
+        padding: 15px;
+        pointer-events: none;
+        position: absolute;
+        text-align: left;
+        width: 200px;
+        z-index: 100;
+
+        @include transition(all 300ms ease);
+      }
+
+      &:hover .pricing-popover {
+        bottom: 30px;
+        opacity: 1;
+      }
+    }
+
+    &:hover {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5), 0 -1px 2px rgba(0, 0, 0, 0.1);
+      transform: scale(1.02);
+    }
+  }
+
+  .pricing-button {
+    background: $logo-orange;
+    border-radius: 2px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3), 0 -1px 2px rgba(0, 0, 0, 0.1);
+    color: white;
+    display: flex;
+    font-size: 23px;
+    font-weight: bold;
+    height: 37px;
+    margin: 10px;
+
+    @include transition(all 200ms ease-out);
+
+    span {
+      margin: auto;
+    }
+
+    &:hover {
+      background: #E78B23;
+    }
+
+    &.green {
+      background-color: #848f00;
+
+      &:hover {
+        background-color: #9FAC00;
+      }
+    }
+
+    &:hover {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4), 0 -1px 2px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+    }
+  }
+}
+
+#definitions {
+  border-radius: 2px;
+  cursor: pointer;
+  margin: 20px auto 0 auto;
+  max-width: 822px;
+  max-height: 50px;
+  min-width: 0;
+  overflow: hidden;
+  padding: 5px 15px 15px 15px;
+  text-align: center;
+  user-select: none;
+
+  @include transition(all 400ms ease);
+
+  i {
+
+    @include transition(all 200ms ease);
+
+    transform: rotate(0deg);
+  }
+
+  .open-button {
+    font-style: italic;
+    margin-bottom: 15px;
+
+    i {
+      display: block;
+    }
+  }
+
+  .content {
+    text-align: left;
+
+    .title {
+      font-weight: bold;
+    }
+  }
+
+  &.opened {
+    max-height: 570px;
+
+    i {
+      transform: rotate(-180deg);
+    }
+  }
+}

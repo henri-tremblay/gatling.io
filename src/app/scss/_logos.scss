@@ -1,0 +1,37 @@
+@import 'variables';
+
+#logos {
+  background-color: $default-background;
+  box-shadow: 0 -8px 8px -8px $lightened-inner-shadow-color;
+
+  header.row-fluid {
+    background-color: $lightened-background;
+  }
+
+  section.first-row {
+    box-shadow: 0 -8px 8px -8px $lightened-inner-shadow-color;
+  }
+
+  h2 {
+    color: $logo-orange;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0;
+    padding: 8px 15px;
+    text-align: center;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.25);
+  }
+
+  $logos-height: 70px;
+
+  .col-xs-2 {
+    height: $logos-height;
+    text-align: center;
+
+    a {
+      display: block;
+      height: $logos-height;
+      line-height: $logos-height;
+    }
+  }
+}

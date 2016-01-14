@@ -1,0 +1,66 @@
+@import 'variables';
+@import 'mixins';
+
+#contact {
+  min-height: 100%;
+  text-align: center;
+
+  h2 {
+    color: $logo-orange;
+    font-weight: bold;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+
+  h4 {
+    color: $logo-orange;
+    font-weight: bold;
+  }
+
+  .contact-container {
+    background-color: white;
+    border-radius: 4px;
+    display: flex;
+    margin: auto;
+    max-width: 700px;
+    padding: 20px;
+    text-align: left;
+
+    @include box-shadow-pref();
+
+    #gatling-map {
+      flex: 3;
+    }
+
+    .contact-content {
+      display: flex;
+      flex: 2;
+      flex-direction: column;
+      margin-left: 30px;
+
+      .contact-text {
+        font-size: 13px;
+      }
+
+      .schedule {
+        font-size: 10px;
+        font-style: italic;
+      }
+
+      .contact-follow {
+        display: flex;
+        flex-wrap: wrap;
+
+        a {
+          margin: 0 5px;
+          padding: 1px;
+        }
+      }
+    }
+  }
+}
+
+#gatling-map {
+  height: 330px;
+  position: relative;
+}

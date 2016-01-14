@@ -1,23 +1,8 @@
-# mac stuff
-.DS_Store
-
-# ides
-.idea
-
-# node
-npm-debug.log
-node_modules
-
-# bower
-bower_components
-
-# build
-build
-
-# dist
-dist
-*.iml
-
-# cache
-.tmp/*
-.sass-cache/*
+.idea/
+.sass-cache/
+.tmp/
+build/
+dist/
+libs/
+node_modules/
+src/app/core/components/config.js

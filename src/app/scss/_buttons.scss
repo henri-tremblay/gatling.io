@@ -1,0 +1,44 @@
+@import 'variables';
+
+.btn-simple,
+a.btn-simple:link,
+a.btn-simple:visited,
+a.btn-simple:hover {
+  background: #d1d0ca;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  padding: 3px 10px;
+  text-decoration: none;
+  font-size: 0.9em;
+  font-weight: bold;
+  transition: all .2s ease-in;
+}
+
+.btn-simple:hover,
+a.btn-simple:hover {
+  background: #DF7700;
+  text-decoration: none;
+}
+
+.btn-gatling,
+a.btn-gatling:link,
+a.btn-gatling:visited,
+a.btn-gatling:hover {
+  background-color: $logo-orange;
+  color: #eee;
+  cursor: pointer;
+  font-size: 1em;
+  margin-right: 10px;
+  padding: 3px 10px;
+  text-decoration: none;
+}
+
+a.btn-gatling:hover {
+  font-weight: bold;
+}
+
+.btn-gatling:hover,
+a.btn-gatling:hover {
+  color: #fff;
+}

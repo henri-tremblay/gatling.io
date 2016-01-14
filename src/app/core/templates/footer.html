@@ -1,0 +1,26 @@
+<div class="modal-legals"
+     data-ng-class="{'opened' : site.isLegalsVisible}"
+     data-ng-click="site.hideLegals()"
+     data-ng-if="site.isLegalsVisible">
+  <div class="modal-legals-container">
+    <div class="modal-legals-box">
+      <div class="modal-close">
+        &times;
+      </div>
+      <h3>Legals</h3>
+      <p data-translate="LEGAL_CONTENT"></p>
+    </div>
+  </div>
+</div>
+
+<!-- FIXME show/hideLegals -->
+
+<footer id="footer">
+  <section class="row-fluid">
+    <div class="legals-copyrights">
+      <div class="legals" data-ng-click="site.showLegals()" data-translate="LEGAL_TITLE"></div>
+      &nbsp;-&nbsp;
+      <div class="text-center">&copy;2016 Gatling Corp 2000-2016</div>
+    </div>
+  </section>
+</footer>

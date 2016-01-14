@@ -1,0 +1,106 @@
+<div id="steps">
+
+  <!-- Record -->
+
+  <div class="step right-side appear appear-right appear-opacity" data-scroll-detection="1">
+    <div class="step-content wrap-reverse">
+      <div class="img">
+        <img src="app/images/recorder.png" alt=""/>
+      </div>
+      <div class="text">
+        <h2 data-translate="HOME_CAROUSEL_RECORD"></h2>
+        <span data-translate="HOME_CAROUSEL_RECORD_CONTENT"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Edit -->
+
+  <div class="step left-side appear appear-left appear-opacity" data-scroll-detection="1">
+    <div class="step-content">
+      <div class="text">
+        <h2 data-translate="HOME_CAROUSEL_EDIT"></h2>
+        <span data-translate="HOME_CAROUSEL_EDIT_CONTENT"></span>
+      </div>
+      <div class="img">
+        <pre class="highlight-container">
+          <!-- @formatter:off -->
+          <code class="scala" data-highlight>class MySimulation extends Simulation {
+
+  val conf = http.baseUrl("http://localhost")
+
+  val scn = scenario("Gatling")
+      .exec(http("index").get("/"))
+      .during(10 minutes) {
+        exec(
+          http("json").get("/json")
+            .check(jsonPath("$.id")
+            .saveAs("id"))
+        )
+      }
+
+  setUp(scn.inject(atOnceUsers(5)))
+      .protocols(conf)
+}</code>
+        <!-- @formatter:on -->
+        </pre>
+      </div>
+    </div>
+  </div>
+
+  <!-- Launch -->
+
+  <div class="step right-side appear appear-right appear-opacity" data-scroll-detection="1">
+    <div class="step-content wrap-reverse">
+      <div class="img">
+        <img src="app/images/jenkins.png" alt=""/>
+
+        <div data-translate="HOME_CAROUSEL_LAUNCH_CONTINUOUS_INTEGRATION"></div>
+      </div>
+      <div class="text">
+        <h2 data-translate="HOME_CAROUSEL_LAUNCH"></h2>
+
+        <div>
+          <h4 data-translate="HOME_CAROUSEL_LAUNCH_OS"></h4>
+
+          <div class="command-group">
+            <div class="command">
+              <span>Linux :</span>
+              <code class="lang-console">gatling.sh</code>
+            </div>
+            <div class="command">
+              <span>Windows :</span>
+              <code class="lang-console">gatling.bat</code>
+            </div>
+          </div>
+          <h4 data-translate="HOME_CAROUSEL_LAUNCH_BUILD_TOOL"></h4>
+
+          <div class="command-group">
+            <div class="command">
+              <span>Maven :</span>
+              <code class="lang-console">mvn gatling:execute</code>
+            </div>
+            <div class="command">
+              <span>SBT :</span>
+              <code class="lang-console">sbt test</code>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Analyze -->
+
+  <div class="step left-side appear appear-left appear-opacity" data-scroll-detection="1">
+    <div class="step-content">
+      <div class="text">
+        <h2 data-translate="HOME_CAROUSEL_ANALYZE"></h2>
+        <span data-translate="HOME_CAROUSEL_ANALYZE_CONTENT"></span>
+      </div>
+      <div class="img">
+        <img src="app/images/analyze.png"/>
+      </div>
+    </div>
+  </div>
+</div>

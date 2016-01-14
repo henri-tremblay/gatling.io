@@ -1,0 +1,130 @@
+@import 'variables';
+@import 'mixins';
+
+#footer {
+  background-color: $dark-background;
+  border-top: 4px solid $footer-color;
+  bottom: -52px;
+  box-shadow: 0 -10px 8px -8px $lightened-border-color;
+  color: $footer-color;
+  position: absolute;
+  width: 100%;
+
+  a:link,
+  a:visited,
+  a:hover {
+    color: $footer-color;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .content-wrapper {
+    padding: 0 15px;
+  }
+
+  header,
+  section {
+    height: $row-height;
+    line-height: $row-height - 1;
+  }
+
+  header {
+    background-color: #555;
+  }
+
+  section {
+    font-size: 0.9em;
+    height: $row-height;
+    line-height: $row-height - 1;
+  }
+
+  .legals-copyrights {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    div {
+      display: inline;
+      padding: 5px;
+      line-height: 1em;
+    }
+
+    .legals {
+      cursor: pointer;
+      font-weight: bold;
+
+      @include transition(all 200ms linear);
+
+      &:hover {
+        color: $background-orange;
+      }
+    }
+  }
+}
+
+.modal-legals {
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  height: 100%;
+  font-size: 14px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+
+  @include transition(all 200ms ease-out);
+
+  .modal-legals-container {
+    display: flex;
+    left: 0;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+
+    @include transition(top 200ms ease-out);
+
+    .modal-legals-box {
+      background: white;
+      border-radius: 3px;
+      margin: auto;
+      max-width: 600px;
+      padding: 10px 20px 30px 20px;
+      position: relative;
+
+      @include box-shadow-pref();
+
+      .modal-close {
+        font-size: 30px;
+        position: absolute;
+        right: 10px;
+        top: 0;
+
+        &:hover {
+          color: #808080;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  &.ng-enter,
+  &.ng-leave.ng-leave-active {
+    opacity: 0;
+
+    .modal-legals-container {
+      top: -50%;
+    }
+  }
+
+  &.ng-enter.ng-enter-active,
+  &.ng-leave {
+    opacity: 1;
+
+    .modal-legals-container {
+      top: 0;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+<div id="presentation" class="container">
+
+  <h1 class="presentation-title" data-translate="{{ company.selectedView.title }}"></h1>
+
+  <div class="presentation-element" data-ng-repeat="view in company.selectedView.content">
+    <div class="presentation-content" data-ng-if="$odd">
+      <h2 class="presentation-elem-title" data-translate="{{ view.title }}"></h2>
+      <div class="text" data-translate="{{ view.text }}"></div>
+    </div>
+    <div class="img-container">
+      <img class="presentation-img" data-ng-src="{{ view.img }}"/>
+    </div>
+    <div class="presentation-content" data-ng-if="$even">
+      <h2 class="presentation-elem-title" data-translate="{{ view.title }}"></h2>
+      <div class="presentation-text" data-translate="{{ view.text }}"></div>
+    </div>
+  </div>
+</div>

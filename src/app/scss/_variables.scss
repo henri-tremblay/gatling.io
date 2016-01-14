@@ -1,0 +1,45 @@
+// Gatling's logo
+
+$logo-orange: #EA7C1D;
+$background-orange: #cd8a14;
+$background-orange-light: #d6a925;
+$logo-orange-transparent: rgba(205, 107, 0, 0.5);
+$logo-orange-less-transparent: rgba(205, 107, 0, 0.9);
+
+$logo-light-green: #c3c47a;
+$logo-middle-green: #848f00;
+$logo-dark-green: #323a07;
+
+$logo-middle-grey: #8f8c8e;
+$logo-dark-grey: #353439;
+
+// Background and colors
+
+$dark-background: #444;
+$default-background: #e8e7e2;
+$lightened-background: lighten($default-background, 4%);
+$grey-background: #d1d0ca;
+
+$default-color: #111;
+$title-color: #222;
+$footer-color: #aaa;
+$border-color: #c7c6c2;
+$lightened-border-color: #e7e6e2;
+$inner-shadow-color: #817e79;
+$lightened-inner-shadow-color: lighten($inner-shadow-color, 4%);
+
+// Sizes
+
+$row-height: 48px;
+$header-height: 48px;
+$logo-width: 283px;
+
+// Highlight
+
+$comment-color: #ccc;
+$highlight-background-color: #fcfcfc;
+
+// Notes
+
+$note-color: #5bc0de;
+$warning-color: #f0ad4e;

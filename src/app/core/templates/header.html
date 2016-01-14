@@ -1,0 +1,150 @@
+<header id="header" class="navbar navbar-static-top" role="banner">
+  <div class="container">
+    <div class="navbar" role="navigation">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      <nav id="navbar-collapse" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+
+          <li data-ng-class="{'active' : site.location === '/'}">
+            <a href="#/"><i class="fa fa-home"></i></a>
+          </li>
+
+          <!-- Resources -->
+
+          <li class="dropdown"
+              data-ng-class="{'active' : site.location === '/resources/download'
+                                      || site.location === '/resources/documentation'
+                                      || site.location === '/resources/talks'
+                                      || site.location === '/resources/about'}">
+            <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button">
+              <span data-translate="MENU_RESOURCES"></span>
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#/resources/download" data-translate="MENU_RESOURCES_DOWNLOAD"
+                     data-ng-class="{'active-sub-menu' : site.location === '/resources/download'}"></a></li>
+              <li><a href="#/resources/documentation" data-translate="MENU_RESOURCES_DOCUMENTATION"
+                     data-ng-class="{'active-sub-menu' : site.location === '/resources/documentation'}"></a></li>
+              <li><a href="#/resources/talks" data-translate="MENU_RESOURCES_TALKS"
+                     data-ng-class="{'active-sub-menu' : site.location === '/resources/talks'}"></a></li>
+              <li><a href="#/resources/about" data-translate="MENU_RESOURCES_ABOUT"
+                     data-ng-class="{'active-sub-menu' : site.location === '/resources/about'}"></a></li>
+            </ul>
+          </li>
+
+          <!-- Professional Services -->
+
+          <li class="dropdown"
+              data-ng-class="{'active' : site.location === '/services'
+                                      || site.location === '/services/training'
+                                      || site.location === '/services/frontline'
+                                      || site.location === '/stories'
+                                      || site.location === '/why'}">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+              <span data-translate="MENU_PROFESSIONAL_SERVICES"></span>
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#/services" data-translate="MENU_PROFESSIONAL_SERVICES_SUPPORT"
+                     data-ng-class="{'active-sub-menu' : site.location === '/services'}"></a></li>
+              <li><a href="#/services/training" data-translate="MENU_PROFESSIONAL_SERVICES_TRAINING"
+                     data-ng-class="{'active-sub-menu' : site.location === '/services/training'}"></a></li>
+              <li><a href="#/services/frontline" data-translate="MENU_PROFESSIONAL_SERVICES_FRONTLINE"
+                     data-ng-class="{'active-sub-menu' : site.location === '/services/frontline'}"></a></li>
+              <li><a href="#/stories" data-translate="MENU_PROFESSIONAL_SERVICES_STORIES"
+                     data-ng-class="{'active-sub-menu' : site.location === '/stories'}"></a></li>
+              <li><a href="#/why" data-translate="MENU_PROFESSIONAL_SERVICES_WHY"
+                     data-ng-class="{'active-sub-menu' : site.location === '/why'}"></a></li>
+            </ul>
+          </li>
+
+          <!-- Company -->
+
+          <li class="dropdown"
+              data-ng-class="{'active' : site.location === '/company/values'
+                                      || site.location === '/company/history'
+                                      || site.location === '/company/team'
+                                      || site.location === '/company/contact'}">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+              <span data-translate="MENU_COMPANY"></span>
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#/company/values" data-translate="MENU_COMPANY_VALUES"
+                     data-ng-class="{'active-sub-menu' : site.location === '/company/values'}"></a>
+              </li>
+              <li><a href="#/company/history" data-translate="MENU_COMPANY_HISTORY"
+                     data-ng-class="{'active-sub-menu' : site.location === '/company/history'}"></a>
+              </li>
+              <li><a href="#/company/team" data-translate="MENU_COMPANY_TEAM"
+                     data-ng-class="{'active-sub-menu' : site.location === '/company/team'}"></a>
+              </li>
+              <li><a href="#/company/contact" data-translate="MENU_COMPANY_CONTACT"
+                     data-ng-class="{'active-sub-menu' : site.location === '/company/contact'}"></a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- Blog -->
+
+          <li><a class="not-focused" href="http://blog.gatling.io/" target="_blank" data-translate="MENU_BLOG"></a></li>
+
+          <!-- Share -->
+
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" role="button" href="#/">
+              <i class="fa fa-share-alt"></i>
+              <span data-translate="MENU_SHARE"></span>
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="https://github.com/gatling/gatling" target="_blank">
+                  <i class="fa fa-github"></i>
+                  <span data-translate="MENU_SHARE_GITHUB"></span>
+                </a>
+              </li>
+              <li>
+                <a href="https://groups.google.com/forum/#!forum/gatling" target="_blank">
+                  <i class="fa fa-google-plus"></i>
+                  <span data-translate="MENU_SHARE_GOOGLEPLUS"></span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/GatlingTool" target="_blank">
+                  <i class="fa fa-twitter"></i>
+                  <span data-translate="MENU_SHARE_TWITTER"></span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/company/gatling" target="_blank">
+                  <i class="fa fa-linkedin"></i>
+                  <span data-translate="MENU_SHARE_LINKEDIN"></span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/GatlingTool" target="_blank">
+                  <i class="fa fa-facebook-official"></i>
+                  <span data-translate="MENU_SHARE_FACEBOOK"></span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/channel/UCaNih6sKuJ9DIMjTEW1EAlQ" target="_blank">
+                  <i class="fa fa-youtube"></i>
+                  <span data-translate="MENU_SHARE_YOUTUBE"></span>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>

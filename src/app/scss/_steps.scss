@@ -1,0 +1,166 @@
+@import 'variables';
+@import 'mixins';
+
+#steps {
+  background: url(../../app/images/subtle_grunge.png);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding-top: 20px;
+  padding-bottom: 40px;
+
+  .step {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 40px;
+    color: rgba(0, 0, 0, 0.91);
+    display: flex;
+    margin: 20px 0;
+    padding: 10px 20px;
+    width: 70%;
+
+    @include box-shadow-pref();
+
+    .step-content {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+
+      &.wrap-reverse {
+        flex-wrap: wrap-reverse;
+      }
+
+      h2 {
+        color: $logo-orange;
+        font-weight: 300;
+        margin-top: 30px;
+      }
+
+      .text {
+        margin: 20px 0;
+        max-width: 300px;
+      }
+
+      .img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 50px;
+        max-width: 380px;
+        width: 100%;
+
+        img {
+          border-radius: 4px;
+          height: 100%;
+          width: 100%;
+        }
+
+        div {
+          text-align: center;
+        }
+      }
+
+      h4 {
+        margin-top: 30px;
+      }
+
+      .command-group {
+        margin-left: 25px;
+
+        .command {
+          margin: 15px 0;
+        }
+      }
+
+      .lang-console {
+        background-color: white;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+        padding: 5px;
+      }
+    }
+  }
+
+  .appear-opacity {
+    opacity: 0;
+
+    &.appear-visible {
+      opacity: 1;
+    }
+  }
+
+  .appear {
+    @include transition(all 500ms ease-out);
+  }
+
+  .appear-scale {
+    transform: scale(0, 0);
+    transform-origin: 50% 50%;
+
+    &.appear-visible {
+      transform: scale(1, 1);
+    }
+  }
+
+  .appear-rotate {
+    transform: rotate(90deg);
+    transform-origin: 50% 50%;
+
+    &.appear-visible {
+      transform: rotate(180deg);
+    }
+  }
+
+  .appear-bottom {
+    transform: translate(0, 300px);
+
+    &.appear-visible {
+      transform: translate(0, 0);
+    }
+  }
+
+  .appear-top {
+    transform: translate(0, -300px);
+
+    &.appear-visible {
+      transform: translate(0, 0);
+    }
+  }
+
+  .appear-left {
+    transform: translate(-300px, 0);
+
+    &.appear-visible {
+      transform: translate(0, 0);
+    }
+  }
+
+  .appear-right {
+    transform: translate(300px, 0);
+
+    &.appear-visible {
+      transform: translate(0, 0);
+    }
+  }
+
+  .left-side {
+    align-self: flex-start;
+    float: right;
+    position: relative;
+    padding-left: 80px;
+    left: -40px;
+    justify-content: flex-end;
+
+    .step-content {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  .right-side {
+    align-self: flex-end;
+    float: left;
+    justify-content: flex-start;
+    left: 40px;
+    padding-right: 80px;
+    position: relative;
+  }
+}

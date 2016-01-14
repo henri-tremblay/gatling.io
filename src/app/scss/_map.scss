@@ -1,0 +1,78 @@
+/**
+ * Copyright (C) 2000-2015 eBusiness Information
+ *
+ * This file is part of MapSquare Widgets.
+ *
+ * MapSquare Widgets is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * MapSquare Widgets is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with MapSquare Widgets.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+/**
+ * Created by Anthony Salembier and Jason Conard.
+ */
+
+.map-refresh {
+  background: white;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  display: flex;
+  height: 27px;
+  position: absolute;
+  right: 50px;
+  top: 10px;
+  transition: box-shadow 200ms ease-out;
+  width: 27px;
+  z-index: 5;
+
+  &:hover {
+    background-color: #f4f4f4;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+  }
+
+  i {
+    font-size: 16px;
+    margin: auto;
+  }
+}
+
+.map-container {
+  overflow: hidden;
+}
+
+.map-content {
+  position: relative;
+  transition: all 200ms ease-out;
+  z-index: 4;
+
+  &.flexible {
+    display: flex;
+    flex: 1;
+  }
+}
+
+.map-container,
+.map-content,
+.map-view {
+
+  &.classic {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+
+  &.flexible {
+    display: flex;
+    flex: 1;
+  }
+}

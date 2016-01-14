@@ -1,0 +1,35 @@
+<section class="testimonials">
+  <div class="container">
+    <nav>
+      <ul class="pager">
+        <li class="previous" data-ng-show="stories.previous.url">
+          <a href="" data-ng-click="stories.onSwitchStory(stories.previous.url)">
+            <span aria-hidden="true">&larr;</span> {{ stories.previous.title | translate }}
+          </a>
+        </li>
+        <li class="next" data-ng-show="stories.next.url">
+          <a href="" data-ng-click="stories.onSwitchStory(stories.next.url)">
+            {{ stories.next.title | translate }} <span aria-hidden="true">&rarr;</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="container" data-ui-view></div>
+  <div class="container">
+    <nav>
+      <ul class="pager">
+        <li class="previous" data-ng-show="stories.previous.url">
+          <a href="" data-ng-click="stories.onSwitchStory(stories.previous.url)">
+            <span aria-hidden="true">&larr;</span> {{ stories.previous.title | translate }}
+          </a>
+        </li>
+        <li class="next" data-ng-show="stories.next.url">
+          <a href="" data-ng-click="stories.onSwitchStory(stories.next.url)">
+            {{ stories.next.title | translate }} <span aria-hidden="true">&rarr;</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</section>

@@ -1,0 +1,221 @@
+@import 'variables';
+@import 'mixins';
+
+.navbar {
+  border: 0;
+  margin: 0;
+  min-height: $header-height;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li a {
+
+  &.active-sub-menu {
+    background-color: white !important;
+    border-top: none !important;
+    color: $logo-orange !important;
+  }
+}
+
+#header {
+  background: $default-background;
+  box-shadow: 0 0 5px black;
+  min-height: $header-height;
+  position: fixed;
+  width: 100%;
+
+  li {
+    border-top: 4px solid transparent;
+
+    @include transition(all .2s ease-in);
+
+    &:hover {
+      border-top: 4px solid white;
+      background-color: white;
+    }
+  }
+
+  .navbar-nav.navbar-right:last-child {
+    margin-right: 0;
+  }
+
+  .navbar-header {
+
+    .navbar-toggle {
+      margin: 10px 0 15px 10px;
+    }
+  }
+
+  .navbar-toggle {
+    background-color: white;
+    border: 1px solid $inner-shadow-color;
+    border-radius: 0;
+    margin: 0;
+
+    .icon-bar {
+      background-color: $inner-shadow-color;
+    }
+  }
+
+  form {
+    margin: 0;
+    padding: 0;
+
+    .form-group {
+      margin-top: 10px;
+      margin-bottom: 0;
+    }
+
+    .form-control {
+      border: none;
+      border-bottom: 1px solid white;
+      border-left: 1px solid white;
+      border-top: 1px solid white;
+      border-radius: 0;
+      box-shadow: none;
+      height: 28px;
+      transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+
+      &:focus {
+        border-bottom: 1px solid $logo-middle-grey;
+        border-left: 1px solid $logo-middle-grey;
+        border-top: 1px solid $logo-middle-grey;
+      }
+    }
+
+    .input-group-addon {
+      border: none;
+      border-radius: 0;
+      padding: 0;
+
+      button[type='submit'] {
+        background-color: $logo-middle-grey;
+        border: 1px solid $logo-middle-grey;
+        color: white;
+        display: block;
+        padding: 6px 12px;
+        width: 44px;
+      }
+    }
+  }
+
+  .nav {
+
+    .open {
+      & > a,
+      & > a:hover,
+      & > a:focus {
+        background-color: $highlight-background-color;
+      }
+    }
+
+    .active {
+      background-color: white;
+      border-top: 4px solid $logo-orange;
+    }
+
+    & > li {
+
+      & > a {
+
+        &:link,
+        &:visited,
+        &:hover {
+          border-top: 4px solid transparent;
+          color: $logo-middle-grey;
+          display: block;
+          font-weight: bold;
+          height: $header-height;
+          line-height: $header-height - 9;
+          padding: 0 12px;
+          text-decoration: none;
+          transition: all .2s ease-in;
+        }
+
+        &:hover {
+          background-color: white;
+          color: $logo-dark-grey;
+        }
+
+        &:focus {
+          background-color: $highlight-background-color;
+        }
+
+        &.icon {
+          width: 40px;
+        }
+
+        $position-x: 8px;
+        $position-y: 8px;
+
+        &.icon-github {
+          background: url(../../app/images/icon-github-on.png) no-repeat $position-x $position-y;
+        }
+
+        &.icon-twitter {
+          background: url(../../app/images/icon-twitter-on.png) no-repeat $position-x $position-y;
+        }
+
+        &.icon-googlegroup {
+          background: url(../../app/images/icon-googlegroup-on.png) no-repeat $position-x $position-y;
+        }
+
+        &.icon-github,
+        &.icon-twitter,
+        &.icon-googlegroup {
+
+          &:hover {
+            background-color: white !important;
+          }
+        }
+      }
+    }
+  }
+
+  .not-focused {
+    background-color: transparent !important;
+  }
+
+  .navbar-right {
+
+    .dropdown-menu {
+      left: 0;
+    }
+  }
+
+  .dropdown-menu {
+    border: none;
+    border-bottom: 4px solid $logo-orange;
+    border-radius: 0;
+    box-shadow: none;
+    min-width: 100%;
+    padding: 0;
+
+    & > li > a {
+      color: $logo-middle-grey;
+      font-weight: bold;
+      padding: 6px 12px;
+
+      &:hover {
+        background-image: none;
+        color: $logo-dark-grey;
+      }
+    }
+  }
+
+  .collapse.in {
+    clear: both;
+    padding: 0;
+
+    .navbar-nav {
+      margin: 0;
+    }
+
+    ul li a.icon {
+      width: 100%;
+    }
+  }
+}
