@@ -271,7 +271,7 @@ define([
           if (parent.widget[widgetName]) {
             parent.widget[widgetName](manager);
           } else {
-            $log.error('The widget ' + widgetName + ' is not loaded or loaded after the callMap function.')
+            $log.error('The widget ' + widgetName + ' is not loaded or loaded after the init function.')
           }
         });
       };
