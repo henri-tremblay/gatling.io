@@ -6,9 +6,9 @@ define([
 
   module.directive('gatlingCheatSheet', gatlingCheatSheet);
 
-  gatlingCheatSheet.$inject = ['$rootScope'];
+  gatlingCheatSheet.$inject = ['Config'];
 
-  function gatlingCheatSheet($rootScope) {
+  function gatlingCheatSheet(Config) {
 
     return {
       restrict: 'E',
@@ -16,7 +16,7 @@ define([
       template: '<div ng-include="cheatSheetUrl"></div>',
 
       link: function (scope) {
-        scope.cheatSheetUrl = 'docs/' + $rootScope.version + '/cheat-sheet.html';
+        scope.cheatSheetUrl = 'docs/' + Config.version.stable + '/cheat-sheet.html';
       }
     };
   }
