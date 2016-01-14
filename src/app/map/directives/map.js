@@ -25,6 +25,6 @@ define([
           MapService.init(element[0], scope.conf, []);
         });
       }
-    }
+    };
   }
 });

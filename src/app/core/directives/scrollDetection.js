@@ -1,5 +1,3 @@
-'use strict';
-
 /**
  * Created by Jason Conard on 08/09/15.
  * That directive detects if the given element is on viewport
@@ -22,6 +20,8 @@
  *   }
  * }
  */
+'use strict';
+
 define([
   'angular',
   './module',
@@ -30,46 +30,41 @@ define([
 
   module.directive('scrollDetection', scrollDetection);
 
-  scrollDetection.$inject = ['$timeout', '$window'];
+  scrollDetection.$inject = ['$document', '$timeout', '$window'];
 
-  function scrollDetection($timeout, $window) {
+  function scrollDetection($document, $timeout, $window) {
+
+    function isElementInViewport(element) {
+      var rect = element.getBoundingClientRect();
+      var rectParent = element.parentNode.getBoundingClientRect();
+
+      var inBoundsEl = (rect.bottom > 0 &&
+      rect.right > 0 &&
+      rect.top < (window.innerHeight || $document[0].documentElement.clientHeight) && /*or $(window).height() */
+      rect.left < (window.innerWidth || $document[0].documentElement.clientWidth));
+      /*or $(window).width() */
+
+      var inBoundsParent = (rectParent.bottom > 0 &&
+      rectParent.right > 0 &&
+      rectParent.top < (window.innerHeight || $document[0].documentElement.clientHeight) && /*or $(window).height() */
+      rectParent.left < (window.innerWidth || $document[0].documentElement.clientWidth));
+      /*or $(window).width() */
+
+      return inBoundsEl && inBoundsParent;
+    }
 
     return function (scope, element, attributes) {
       var windowElem = angular.element($window);
       var itemTimeout = null;
 
-      function isElementInViewport(el) {
-        // Special bonus for those using jQuery
-        if (typeof jQuery === 'function' && el instanceof jQuery) {
-          el = el[0];
-        }
-
-        var rect = el.getBoundingClientRect();
-        var rectParent = el.parentNode.getBoundingClientRect();
-
-        var inBoundsEl = (rect.bottom > 0 &&
-        rect.right > 0 &&
-        rect.top < (window.innerHeight || document.documentElement.clientHeight) && /*or $(window).height() */
-        rect.left < (window.innerWidth || document.documentElement.clientWidth));
-        /*or $(window).width() */
-
-        var inBoundsParent = (rectParent.bottom > 0 &&
-        rectParent.right > 0 &&
-        rectParent.top < (window.innerHeight || document.documentElement.clientHeight) && /*or $(window).height() */
-        rectParent.left < (window.innerWidth || document.documentElement.clientWidth));
-        /*or $(window).width() */
-
-        return inBoundsEl && inBoundsParent;
-      }
-
       var checkOffset = function () {
-        var time = +attributes['scrollDetection'];
+        var time = +attributes.scrollDetection;
         time = _.isNaN(time) ? 0 : time;
 
         if (itemTimeout) {
           $timeout.cancel(itemTimeout);
         }
-        if (isElementInViewport(element)) {
+        if (isElementInViewport(element[0])) {
           itemTimeout = $timeout(function () {
 
             if (element[0].className.indexOf('appear-visible') < 0) {
@@ -79,7 +74,7 @@ define([
         }
       };
 
-      windowElem.bind("scroll resize", checkOffset);
+      windowElem.bind('scroll resize', checkOffset);
       windowElem.bind('customScrollCall', function () {
         $timeout(checkOffset, 250);
       });

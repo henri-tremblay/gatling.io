@@ -4,7 +4,6 @@ define([
   './module'
 ], function (module) {
 
-
   module.controller('MapCtrl', MapCtrl);
 
   function MapCtrl() {

@@ -32,9 +32,9 @@ define([
 
   module.factory('MapService', MapService);
 
-  MapService.$inject = ['$http', '$log', '$q', 'Constants'];
+  MapService.$inject = ['$document', '$http', '$log', '$q', '$window', 'Constants'];
 
-  function MapService($http, $log, $q, Constants) {
+  function MapService($document, $http, $log, $q, $window, Constants) {
 
     var parent = {
       widget: {}
@@ -66,7 +66,7 @@ define([
       };
 
       var display = 'classic';
-      var parentDisplay = getComputedStyle(map.parentNode).display;
+      var parentDisplay = $window.getComputedStyle(map.parentNode).display;
       if (parentDisplay.indexOf('flex') >= 0) {
         display = 'flexible';
       }
@@ -75,10 +75,10 @@ define([
 
       manager.rootElement = map;
 
-      var content = document.createElement('div');
+      var content = $document[0].createElement('div');
       content.setAttribute('class', 'map-content ' + display);
 
-      var element = document.createElement('div');
+      var element = $document[0].createElement('div');
       element.setAttribute('id', config.id + '-map');
       element.setAttribute('class', 'map-view ' + display);
 
@@ -94,7 +94,8 @@ define([
         zoomControl: false
       });
       L.tileLayer(config.tileServer, {
-        attribution: '<a href="http://openstreetmap.fr/" target="_blank">OpenStreetMap</a> | <a href="http://mapsquare.io/" target="_blank">mapsquare</a>'
+        attribution: '<a href="http://openstreetmap.fr/" target="_blank">OpenStreetMap</a> | ' +
+        '<a href="http://mapsquare.io/" target="_blank">mapsquare</a>'
       }).addTo(manager.map);
 
       var markerClusterGroup = new L.MarkerClusterGroup({disableClusteringAtZoom: config.clusterMaxLevel});
@@ -129,7 +130,7 @@ define([
       manager.map.addLayer(manager.traces);
       manager.map.addLayer(manager.areas);
 
-      var refreshButton = document.createElement('div');
+      var refreshButton = $document[0].createElement('div');
       refreshButton.className = 'map-refresh';
       refreshButton.innerHTML = '<i class="fa fa-undo"></i>';
       map.appendChild(refreshButton);
@@ -147,7 +148,7 @@ define([
           var track;
           var latLngs = [];
           t.latLngList.forEach(function (latLng) {
-            latLngs.push(L.latLng(latLng.lat, latLng.lng))
+            latLngs.push(L.latLng(latLng.lat, latLng.lng));
           });
 
           var options = {
@@ -165,7 +166,7 @@ define([
           var polygon;
           var latLngs = [];
           p.latLngList.forEach(function (latLng) {
-            latLngs.push(L.latLng(latLng.lat, latLng.lng))
+            latLngs.push(L.latLng(latLng.lat, latLng.lng));
           });
 
           var options = {};
@@ -203,7 +204,7 @@ define([
           var currentMarker = null;
           var anchorX = point.typeItem.anchorX;
           var anchorY = point.typeItem.anchorY;
-          var popupAnchorX = -anchorX + ( sizes[point.typeItem.markerSize][0] / 2 );
+          var popupAnchorX = -anchorX + (sizes[point.typeItem.markerSize][0] / 2);
           var popupAnchorY = -anchorY;
           var iconSize = [40, 48];
 
@@ -271,7 +272,7 @@ define([
           if (parent.widget[widgetName]) {
             parent.widget[widgetName](manager);
           } else {
-            $log.error('The widget ' + widgetName + ' is not loaded or loaded after the init function.')
+            $log.error('The widget ' + widgetName + ' is not loaded or loaded after the init function.');
           }
         });
       };

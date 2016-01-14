@@ -125,7 +125,7 @@ define([
 
     $scope.$watch('location', function () {
       if ($location.$$url === '/values') {
-        me.selectedView = me.views.values
+        me.selectedView = me.views.values;
       }
 
       switch ($location.$$url) {

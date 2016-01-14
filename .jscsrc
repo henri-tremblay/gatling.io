@@ -1,7 +1,9 @@
 {
   "excludeFiles": [
     "node_modules/**",
-    "libs/**"
+    "libs/**",
+    "src/app/analytics.js",
+    "src/app/main.js"
   ],
   "disallowCommaBeforeLineBreak": null,
   "disallowDanglingUnderscores": null,
