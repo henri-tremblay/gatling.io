@@ -111,15 +111,17 @@ footer.offers {
 }
 
 .pricing-container {
-  display: flex;
+  //display: flex;
   height: 370px;
   width: 100%;
 }
 
 .pricing {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
+  //display: flex;
+  //flex: 1;
+  //flex-direction: column;
+  width: 50%
+  margin: 0 auto;
 
   .pricing-block {
     background: white;
