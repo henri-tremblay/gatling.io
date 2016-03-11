@@ -24,6 +24,7 @@
   "MENU_COMMUNITY_LINKEDIN" : "LinkedIn",
   "MENU_COMMUNITY_FACEBOOK" : "Facebook",
   "MENU_COMMUNITY_YOUTUBE" : "Youtube",
+  "MENU_COMMUNITY_CRUNCHBASE" : "CrunchBase",
   "FOOTER": "Gatling is an open-source load testing framework based on <strong>Scala</strong>, <strong>Akka</strong> and <strong>Netty</strong>",
 
   "HOME_HEADER_TITLE": "is an open-source load testing framework based on <strong>Scala</strong>, <strong>Akka</strong> and <strong>Netty</strong>",
@@ -233,6 +234,8 @@
   "TALKS_UPCOMING" : "Upcoming",
   "TALKS_NO_UPCOMING" : "No upcoming talks",
   "TALKS_PASSED" : "Passed",
+  "TALK_57" : "March 8th, 2016 <a href=\"https://www.doag.org/konferenz/konferenzplaner/konferenzplaner_details.php?id=499959&locS=0&vid=509821\" target=\"_blank\">JavaLand 2016 , Germany</a>, with  Bert Jan Schrijver",
+  "TALK_56" : "March 3rd, 2016 <a href=\"https://www.youtube.com/watch?v=gOZvtBYzIVc\" target=\"_blank\">Voxxed Days, Zürich</a> with Niko Köbler",
   "TALK_55" : "December 17th, 2015 <a href=\"http://www.lavajug.org/2015/12/17/gatling.html/\" target=\"_blank\">LavaJUG, in Clermont-Ferrand, France</a> with Stéphane Landelle",
   "TALK_54" : "December 8th, 2015 <a href=\"http://www.meetup.com/Seattle-Scala-User-Group/events/220010686/?eventId=220010686/\" target=\"_blank\">Scala at the Sea, Seattle</a> with Dragos Manolescu",
   "TALK_53" : "November 25th, 2015 <a href=\"http://www.meetup.com/Gatling-User-Group-Paris/events/223787992/\" target=\"_blank\">Gatling User Group, Paris</a> with Stéphane Landelle",

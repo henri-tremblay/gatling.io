@@ -17,7 +17,7 @@ define([
     },
 
     Talks: {
-      Count: 55
+      Count: 57
     }
   };
 
