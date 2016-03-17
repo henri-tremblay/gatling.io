@@ -51,7 +51,8 @@
 }
 
 .highlight-scala,
-.highlight-text {
+.highlight-text,
+.highlight-xml {
   margin-bottom: 10px;
 
   .highlight {
@@ -67,7 +68,8 @@
   }
 }
 
-.highlight-scala {
+.highlight-scala,
+.highlight-xml {
 
   .highlight {
 
@@ -75,6 +77,7 @@
       color: $logo-orange;
     }
 
+    .c,
     .c1 {
       color: $comment-color;
     }
@@ -92,6 +95,10 @@
     .nc {
       color: $logo-orange;
       font-weight: bold;
+    }
+
+    .nt {
+      color: $logo-middle-green;
     }
   }
 }
