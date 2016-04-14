@@ -5,8 +5,8 @@ define([], function () {
   return {
 
     version: {
-      stable: '2.1.7',
-      development: '2.2.0-SNAPSHOT'
+      stable: '2.2.0',
+      development: '2.3.0-SNAPSHOT'
     }
   };
 });
