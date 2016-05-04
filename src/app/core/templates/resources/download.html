@@ -2,47 +2,74 @@
   <div class="container">
     <section class="row">
       <div class="col-md-12">
-        <h1><span data-translate="DOWNLOAD_LATEST_RELEASE"></span> : Gatling {{ site.version.stable }}</h1>
+        <h1>Stable release : {{ site.version.stable }}</h1>
 
-        <p>
-          <a class="lead"
-             href="https://repo1.maven.org/maven2/io/gatling/highcharts/gatling-charts-highcharts-bundle/{{ site.version.stable }}/gatling-charts-highcharts-bundle-{{ site.version.stable }}-bundle.zip">Gatling
-            bundle (zip)</a>
+        <h2>Zip bundle</h2>
+
+        <p>Download <a
+            href="https://repo1.maven.org/maven2/io/gatling/highcharts/gatling-charts-highcharts-bundle/{{ site.version.stable }}/gatling-charts-highcharts-bundle-{{ site.version.stable }}-bundle.zip">here</a>
         </p>
 
-        <span class="lead"> <span data-translate="USING"></span> Maven :</span>
+        <h2>Maven artifacts</h2>
+
+        <p>Deployed on <a href="http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22io.gatling%22">Maven Central</a></p>
+
+        <h3>Using Maven</h3>
 
         <div class="highlight-container">
-          <!-- @formatter:off -->
-          <pre><code class="xml" data-highlight>
+          <!-- @formatter:on -->
+          <pre><code class="xml">
 &lt;dependency&gt;
-  &lt;groupId&gt;io.gatling.highcharts&lt;/groupId&gt;
-  &lt;artifactId&gt;gatling-charts-highcharts&lt;/artifactId&gt;
-  &lt;version&gt;{{ site.version.stable }}&lt;/version&gt;
+    &lt;groupId&gt;io.gatling.highcharts&lt;/groupId&gt;
+    &lt;artifactId&gt;gatling-charts-highcharts&lt;/artifactId&gt;
+    &lt;version&gt;{{ site.version.stable }}&lt;/version&gt;
 &lt;/dependency&gt;
-
           </code></pre>
-          <!-- @formatter:on -->
+          <!-- @formatter:off -->
         </div>
-        <span class="lead"><span data-translate="USING"></span> SBT:</span>
+
+        <h3>Using SBT</h3>
 
         <div class="highlight-container">
-          <!-- @formatter:off -->
-          <pre><code class="scala" data-highlight>
+          <pre><code class="scala">
 libraryDependencies += "io.gatling.highcharts" % "gatling-charts-highcharts" % "{{ site.version.stable }}"
-
           </code></pre>
-          <!-- @formatter:on -->
         </div>
-        <h1 data-translate="DOWNLOAD_LATEST_SNAPSHOT"></h1>
 
-        <p class="lead"><span data-translate="DOWNLOAD_SNAPSHOT_AVAILABLE"></span> <a
-          href="https://oss.sonatype.org/content/repositories/snapshots/">Sonatype OSS Snapshots repository</a></p>
-        <p class="lead"><a
-          href="https://oss.sonatype.org/content/repositories/snapshots/io/gatling/highcharts/gatling-charts-highcharts-bundle/{{ site.version.development }}/">Gatling
-          bundle (.zip)</a></p>
+        <h1>Latest Snapshot : {{ site.version.development }}</h1>
+
+        <h2>Zip bundle</h2>
+
+        <p>Download <a
+            href="https://oss.sonatype.org/content/repositories/snapshots/io/gatling/highcharts/gatling-charts-highcharts-bundle/{{ site.version.development }}/">here</a>
+        </p>
+
+        <h2>Maven artifacts</h2>
+
+        <p>Deployed on <a href="https://oss.sonatype.org/content/repositories/snapshots/">Sonatype OSS Snapshots repository</a></p>
+
+        <h3>Using Maven</h3>
+
+        <div class="highlight-container">
+          <!-- @formatter:on -->
+          <pre><code class="xml">
+&lt;dependency&gt;
+    &lt;groupId&gt;io.gatling.highcharts&lt;/groupId&gt;
+    &lt;artifactId&gt;gatling-charts-highcharts&lt;/artifactId&gt;
+    &lt;version&gt;{{ site.version.development }}&lt;/version&gt;
+&lt;/dependency&gt;
+          </code></pre>
+          <!-- @formatter:off -->
+        </div>
+
+        <h3>Using SBT</h3>
+
+        <div class="highlight-container">
+          <pre><code class="scala">
+libraryDependencies += "io.gatling.highcharts" % "gatling-charts-highcharts" % "{{ site.version.development }}"
+          </code></pre>
+        </div>
       </div>
     </section>
   </div>
 </section>
-s
