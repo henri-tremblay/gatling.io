@@ -29,7 +29,7 @@ these directories for a clean installation.
 
 You must add a config.js file in the components directory :
 ```bash
-[... gatling.io ]$ cp src/app/components/config.sample.js src/app/components/config.js
+[... gatling.io ]$ cp src/app/core/components/config.sample.js src/app/core/components/config.js
 ```
 
 Then you can edit the config.js file.
